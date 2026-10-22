@@ -1,0 +1,2278 @@
+float Abs( float f )
+void ActivateInterface( const gpstring& sInterfacePath, bool bShow )
+bool ActorAutoDefendsOthers( void ) const
+bool ActorAutoHealsOthersLife( void ) const
+bool ActorAutoHealsOthersMana( void ) const
+bool ActorAutoHealsSelfLife( void ) const
+bool ActorAutoHealsSelfMana( void ) const
+bool ActorAutoPicksUpItems( void ) const
+bool ActorAutoReanimatesFriends( void ) const
+bool ActorAutoSwitchesToKarate( void ) const
+bool ActorAutoSwitchesToMagic( void ) const
+bool ActorAutoSwitchesToMelee( void ) const
+bool ActorAutoSwitchesToRanged( void ) const
+bool ActorAutoUsesStoredItems( void ) const
+bool ActorAutoXfersMana( void ) const
+float ActorBalancedAttackPreference( void ) const
+bool ActorPrefersMagic( void ) const
+bool ActorPrefersMelee( void ) const
+bool ActorPrefersRanged( void ) const
+void Add( eQueryTrait qt )
+void Add( Go* go )
+void Add( Goid goid )
+void Add( UIWindow* wnd )
+void AddActiveItem( UIWindow* pItem )
+void AddAnimToBlendGroup( DWORD i, float relw )
+void AddAnimToBlendGroup( DWORD i, float relw, bool f )
+void AddBlankInterface( const gpstring& sName )
+void AddChild( Go* child )
+void AddChild( UIWindow* pWindow )
+AuditorDb* AddDb( const char* name, bool xferDb )
+void AddDelayedPcontent( void )
+void AddElement( const gpstring& sText, int tag )
+void AddElement( const gpstring& sText, int tag, DWORD dwColor )
+void AddEquipRequirements( const gpstring& requirements )
+void AddIcon( const gpstring& texture, int icon )
+void AddMemberNow( Go* member )
+void AddNewSinkToContext( const char* context, const char* name, const char* sinkFactory )
+void AddNewSinkToContext( const char* context, const char* name, const char* sinkFactory, const char* sinkParams )
+void AddNewSinkToContext( const char* context, const char* sinkFactory )
+void AddNewSinkToSink( const char* sink, const char* name, const char* sinkFactory )
+void AddNewSinkToSink( const char* sink, const char* sinkFactory )
+void AddRapiFader( bool bFadeIn, float duration )
+void AddReportFilters( const gpstring& filter )
+bool AddSkritBot( const char* skritName )
+float AddTimerSeconds( int id, float extraTime )
+bool AddToGroup( Blender* b, DWORD c, DWORD s, DWORD i, float w, bool fc )
+bool AddToHotGroup( Goid goid )
+bool AddToHotGroup( Goid goid, bool add )
+UINT32 AddVariable( SiegePos& position, Goid owner )
+void AddWindowToInterface( UIWindow* pWindow, const gpstring& sInterface, bool bExistFail )
+void AlertRangedAttack( Goid target )
+bool AliveEnemiesVisible( void )
+bool AliveFriendsVisible( void )
+void All( void )
+bool AmBusy( void ) const
+bool AmFacing( const SiegePos& target ) const
+bool AmFacing( Go* target ) const
+bool AmPatrolling( void ) const
+void AnimationCallback( DWORD msg )
+bool AnimEventBitTest( DWORD dw, eAnimEvent ev )
+gpstring& Append( gpstring& str, const char* extra )
+gpstring& AppendF( gpstring& str, const char* format, ... )
+void ApplyEnchantments( Goid target, Goid source )
+bool AreHumanPartyMembersInNodes( int region, int section, int level, int object )
+bool AreScreenPartyMembersInNodes( int region, int section, int level, int object )
+void Assert( int testExpr )
+void Assert( int testExpr, const char* msg )
+void AssertF( int testExpr, const char* format, ... )
+gpstring& Assign( gpstring& str, const char* extra )
+gpstring& AssignF( gpstring& str, const char* format, ... )
+bool AttachDeformableChild( HAspect hchild )
+bool AttachReverseLinkedChild( HAspect hchild, const char* parentbone, const char* childbone )
+bool AttachReverseLinkedChild( HAspect hchild, const char* parentbone, const char* childbone, const Quat& offsetrot, const vector_3& offsetpos )
+bool AttachRigidLinkedChild( HAspect hchild, const char* parentbone, const char* childbone )
+bool AttachRigidLinkedChild( HAspect hchild, const char* parentbone, const char* childbone, const Quat& offsetrot, const vector_3& offsetpos )
+bool AutoSaveGame( void )
+bool AutoSaveGameNow( void )
+bool AutoSaveParty( void )
+void AutoSize( UIWindow* pWindow, int index )
+void AwardExperience( Goid Client, Goid Weapon, float experience_points )
+float AzimuthAngleToTarget( Goid go, Goid target )
+float BaseAnimDurationForStance( DWORD stance ) const
+void BeginReport( void )
+bool BlenderIsIdle( void )
+void Breakpoint( void )
+eTargetTypeFlags BuildTargetTypeFlags( Go* caster, Go* target )
+Go* CalcSecondTierTarget( const Go* attacker, const Go* target )
+void CalculateAimingError( Goid Client, const char* szSkill, float& x_axis, float& y_axis )
+float CalculateDamage( Goid Attacker, Goid Weapon, Goid Victim, float min_damage, float max_damage, float total_defense, bool bPiercing )
+float CalculateExperience( Goid Attacker, Goid Weapon, Goid Victim, float damage )
+float CalculateMagnitude( float mag_a, float damage )
+void CalculateWeaponAimingError( Goid Weapon, float& x_axis, float& y_axis )
+eCameraOrder CameraOrderFromString( const char* str )
+bool CanAdd( const Go* item, eInventoryLocation il, bool autoPlace ) const
+bool CancelExpiration( Go* go, bool forced )
+bool CanHit( Goid Attacker, Goid Victim, Goid AttackerWeapon, Goid VictimWeapon )
+bool CanOperateOn( Go* go )
+bool CanReachNextLevel( const Go* caster )
+float Ceil( float f )
+void CenterWindowToMousePos( void )
+void ChangeLife( Goid Client, float Delta )
+void ChangeLife( Goid Client, float Delta, DWORD rpcWhere )
+void ChangeLifeLocal( Goid Client, float Delta )
+void ChangeMana( Goid Client, float Delta )
+void ChangeMana( Goid Client, float Delta, DWORD rpcWhere )
+void ChangeManaLocal( Goid Client, float Delta )
+void Chat( const gpwstring& sChatText )
+bool CheckAutoSaveParty( bool ignoreMinTime )
+bool CheckAutoSaveParty( void )
+void CheckCommand( const char* command )
+void CheckFile( const char* skritName )
+bool CheckForCriticalHit( Goid Attacker, Goid Victim )
+void Class( const char* className )
+void Classes( bool includeHidden )
+void Classes( void )
+void Clear( eJobQ q )
+void Clear( void )
+void ClearActiveItems( void )
+void ClearAndCommit( eJobQ q )
+void ClearCameraPositionCache( void )
+void ClearDebugHudOptions( eDebugHudOptions options )
+void ClearExperienceBenefactor( void )
+void ClearInstanceAttrFlags( DWORD newval )
+void ClearOrders( void )
+void ClearParent( void )
+void ClearPosition( void )
+void ClearSelection( void )
+void ClearTimer( void )
+void ClearToolTip( void )
+void ClearVariables( Goid owner )
+Goid CloneLocalGo( const GoCloneReq& cloneReq )
+void CloseBlendGroup( bool merge )
+void CloseBlendGroup( void )
+void CloseBlendGroupWithTransition( float t, bool a )
+void Command( const char* command )
+float ComputeAimingAngle( const SiegePos& firingPos, const SiegePos& targetPos, float velocity )
+float ComputeAimingAngle( Goid ammo, const SiegePos& firingPos, const SiegePos& targetPos, float velocity )
+void ComputeAimingError( void )
+SiegePos& ComputeFiringPos( void )
+SiegePos& ComputeTargetPos( Goid target )
+bool Contains( const Go* item ) const
+bool Contains( const gpstring& member ) const
+bool ContainsAll( const Membership& membership ) const
+bool ContainsAny( const Membership& membership ) const
+float ConvertRatioToAttackBlend( float x, float y, float deg0, float deg1 )
+float ConvertRatioToWalkBlend( float x, float z )
+static SiegePos& Copy( const SiegePos& obj )
+static SiegeRot& Copy( const SiegeRot& obj )
+bool CopyScreenShotToClipboard( void )
+float Cos( float f )
+void CreateCommonCtrl( const gpstring& sTemplate )
+SimID CreateDamageVolume( const SiegePos& start_pos, const SiegePos& end_pos, float start_radius, float end_radius, float damage, float duration, Goid Owner, Goid OwnerWeapon )
+SimID CreateDamageVolume( Goid source, Goid target, float length, float start_radius, float end_radius, float damage, float duration, Goid Owner, Goid OwnerWeapon )
+UIWindow* CreateDefaultWindowOfType( const gpstring& sType )
+SimID CreateExplosion( const SiegePos& position, float radius, float magnitude, float damage, Goid Owner, Goid OwnerWeapon )
+int CreateFrameTimer( int framesFromNow )
+void CreateFrameTimer( int id, int framesFromNow )
+int CreateTimer( float timeFromNow )
+void CreateTimer( int id, float timeFromNow )
+bool DamageGo( Goid Victim, Goid Attacker, Goid AttackerWeapon, float amount, bool piercing_damage, bool explosive_damage )
+void DamageGoMagic( Goid Attacker, Goid Spell, Goid Victim, SiegePos& damage_origin )
+void DamageGoMelee( Goid Attacker, Goid Weapon, Goid Victim )
+bool DamageGoParticle( Goid Victim, Goid Attacker, Goid AttackerWeapon, float min_damage, float max_damage, float exposure_time, bool award_xp, bool bIgnite, bool bCalcFireResist )
+void DamageGoRanged( Goid Attacker, Goid Weapon, Goid Victim )
+bool DamageGoTrap( Goid Victim, Goid Attacker, Goid AttackerWeapon, float min_damage, float max_damage )
+bool DamageGoVolume( Goid Victim, Goid Attacker, Goid AttackerWeapon, float damage, float delta_t, bool explosive_damage )
+void DeactivateInterface( const gpstring& interface_name )
+void DeactivateInterfaceWindows( const gpstring& sInterface )
+void DebugBreakOn( Goid breakGoid )
+void Debugger( const char* msg )
+void DebuggerF( const char* format, ... )
+void DebugListPlayers( void )
+void DebugSetShowHandleAccess( bool flag )
+bool DebugShowHandleAccess( void )
+float DecodeAttackDeviation( DWORD flags )
+float DecodeAttackElevation( DWORD flags )
+float DecodeAttackLoopDuration( DWORD flags )
+float DegreesToRadians( float f )
+bool DeleteWindow( UIWindow* pWindow )
+bool Deselect( Goid goid )
+bool Deselect( void )
+void DeselectAll( void )
+void DeselectElements( void )
+void DestroyTimer( int id )
+bool DetachAllChildren( void )
+bool DetachChild( HAspect hchild )
+eHitType DetermineHitType( float damage_done, float min_damage, float max_damage )
+void Disable( const char* context )
+void Disable( void )
+void DisableAutoExpiration( void )
+void DisableButton( void )
+void Disassemble( const char* skritName )
+void Disassemble( ReportSys::Context* ctx ) const
+void Disassemble( void ) const
+void DisassembleCommand( const char* command )
+void DisassembleCurrent( ReportSys::Context* ctx ) const
+void DisassembleCurrent( void ) const
+Goid DoesActivePartyHaveTemplate( const char* sTemplate, Goid target )
+bool DoesSphereHaveHumanControlledOccupants( const SiegePos& center, float radius )
+bool DoesSphereHaveOccupants( const SiegePos& center, float radius )
+bool DoingJobOriginatingFrom( eJobQ q, Go* origin )
+bool DoWindowsOverlap( const char* szWindow1, const char* szInterface1, const char* szWindow2, const char* szInterface2 )
+bool DoWindowsOverlap( UIWindow* pWindow1, UIWindow* pWindow2 )
+void DragWindow( int delta_x, int delta_y )
+void DrawDebugArc( const SiegePos& PosA, const SiegePos& PosB, DWORD color, const gpstring& sName, bool drawticks )
+void DrawDebugBoxStack( const SiegePos& pos, float size, DWORD color, float duration, const matrix_3x3& orient )
+void DrawDebugCircle( const SiegePos& Center, float Radius, DWORD Color, const gpstring& sName )
+void DrawDebugDashedLine( const SiegePos& PosA, const SiegePos& PosB, DWORD Color, const gpstring& sName )
+void DrawDebugDirectedLine( const SiegePos& PosA, const SiegePos& PosB, DWORD Color, const gpstring& sName )
+void DrawDebugLine( const SiegePos& PosA, const SiegePos& PosB, DWORD Color, const gpstring& sName )
+void DrawDebugLine( const SiegePos& PosA, const SiegePos& PosB, DWORD Color, const gpstring& sName, float duration )
+void DrawDebugLinkedTerrainPoints( const SiegePos& PosA, const SiegePos& PosB, DWORD Color, const gpstring& sName )
+void DrawDebugPoint( const SiegePos& Center, float Radius, DWORD Color, const gpstring& sName )
+void DrawDebugPoint( const SiegePos& Center, float Radius, DWORD Color, float height, const gpstring& sName, DWORD labelColor )
+void DrawDebugPulsePolygon( const SiegePos& Center, float MinRadius, float MaxRadius, float PulsePeriod, unsigned int Sides, DWORD Color, const gpstring& sName )
+void DrawDebugScreenLabel( const SiegePos& Pos, const gpstring& name )
+void DrawDebugScreenLabelColor( const SiegePos& Pos, const gpstring& name, DWORD color )
+void DrawDebugSphere( const SiegePos& Center, float Radius, DWORD Color, const gpstring& sName )
+void DrawDebugSphereConeSection( const SiegePos& Position, const vector_3& Direction, float Angle, float Radius, DWORD Color, const gpstring& sName )
+void DrawDebugSphereOffsetAngle( const SiegePos& Center, float Radius, float OffsetAngle, DWORD Color, const gpstring& sName )
+void DrawDebugTriangle( const SiegePos& Center, float Radius, DWORD Color, const gpstring& sName )
+void DrawDebugWedge( const SiegePos& Center, float Radius, const SiegePos& Direction, float ArcLength, DWORD Color, bool filled )
+void DrawDebugWedge( const SiegePos& Center, float Radius, const vector_3& Direction, float ArcLength, DWORD Color, bool filled )
+void DrawDebugWorldLabelScroll( const SiegePos& Pos, const gpstring& name, DWORD color, float duration, bool scroll )
+void DropItemsAroundBody( void )
+void DropItemsFor( Goid killerGoid )
+void Dump( bool verbose, ReportSys::Context* ctx )
+void Dump( const char* skritName )
+void Dump( Goid go, ReportSys::Context* ctx )
+void Dump( ReportSys::Context* ctx )
+void Dump( ReportSys::Context* ctx ) const
+void Dump( void )
+void Dump( void ) const
+void Dump2( bool verbose, ReportSys::Context* ctx )
+void DumpActorStats( const Go* go, ReportSys::Context* ctx )
+static void DumpBinders( void )
+void DumpCommand( const char* command )
+void DumpFile( const char* fileName )
+void DumpGameStack( void )
+void DumpPathVars( void )
+void DumpPContentDb( void )
+void DumpPContentDbStats( void )
+void DumpPerformanceSummary( bool footerMode, ReportSys::Context* ctx )
+void DumpPrototypes( void )
+void DumpStateMachine( ReportSys::Context* ctx ) const
+void DumpStateMachine( void ) const
+void DumpStatistics( void ) const
+void DumpStrings( void )
+float DurationOfCurrentTimeWarp( void ) const
+bool Empty( void ) const
+void Enable( bool enable )
+void Enable( const char* context )
+void EnableAutoExpiration( bool set )
+void EnableAutoExpiration( void )
+void EnableButton( void )
+void EnableIme( bool bSet )
+bool EncodeAttackParameters( float loopdur, float elevation, float deviation, DWORD& flags )
+void EndReport( void )
+bool EndRequested( void )
+void EnterAtomicState( float duration )
+void Enum( const char* enumName )
+void Enums( bool includeConstants )
+void Enums( void )
+void Error( const char* msg )
+void ErrorBox( const char* msg )
+void ErrorBoxF( const char* format, ... )
+void ErrorF( const char* format, ... )
+bool EvalBoolFormula( const char* formula )
+bool EvalBoolFormula( const char* formula, bool defValue )
+float EvalFloatFormula( const char* formula )
+float EvalFloatFormula( const char* formula, float defValue )
+int EvalIntFormula( const char* formula )
+int EvalIntFormula( const char* formula, int defValue )
+float EvaluateAttackDamageModifierMax( const Go* caster, const Go* target ) const
+float EvaluateAttackDamageModifierMin( const Go* caster, const Go* target ) const
+float EvaluateCastExperience( const Go* caster, const Go* target ) const
+float EvaluateEffectDuration( const Go* caster, const Go* target ) const
+float EvaluateManaCost( const Go* caster, const Go* target ) const
+bool Execute( const gpstring& line )
+void Execute( const char* skritName )
+void Execute( const char* skritName, const char* funcName )
+void ExitGame( void )
+bool ExplodeGoWithDamage( Goid Object, Goid Owner, Goid OwnerWeapon )
+void FadeMoodVolume( float fadeTime, DWORD volume )
+void Fatal( const char* msg )
+void Fatal( void )
+void FatalF( const char* format, ... )
+float FilterSmoothStep( float a, float b, float x )
+float FilterSmoothStep( float x )
+bool FindClearLosPoint( const Go* from, const Go* to, float maxDist, float maxAngle, SiegePos& out )
+bool FindClearLosPoint( const Go* from, const SiegePos& to, float maxDist, float maxAngle, SiegePos& out )
+AuditorDb* FindDb( const char* name )
+Goid FindGoidByScid( Scid scid ) const
+int FindNodalTextureIndex( SiegeId node, const gpstring& texName )
+bool FindSpotForDrop( Go* dropper, Go* dropFor, Go* dropItem, float diagLength, float maxDegreesAngularDeviance, float verticalDeltaConstraint, SiegePos& pos, bool bDropSame )
+bool FindSpotRelativeToSource( const SiegePos* source, const SiegePos* target, siege::eLogicalNodeFlags nodeFlags, float pointBufferRadius, bool awayFromTarget, float minDistance, float maxDistance, float minDegreesAngularDeviance, float maxDegreesAngularDeviance, float verticalDistanceConstraint, bool showHuds, SiegePos& pos, bool bDropSame )
+bool FindSpotRelativeToSource( const SiegePos* source, const SiegePos* target, siege::eLogicalNodeFlags nodeFlags, float pointBufferRadius, bool awayFromTarget, float minDistance, float maxDistance, float minDegreesAngularDeviance, float maxDegreesAngularDeviance, float verticalDistanceConstraint, bool showHuds, SiegePos& pos, bool bDropSame, bool bProjectBothSides )
+bool FindSpotRelativeToSource( const SiegePos* source, float pointBufferRadius, float minDistance, float maxDistance, float verticalDistanceConstraint, bool showHuds, SiegePos& pos )
+bool FindSpotRelativeToSource( Go* source, float minDistance, float maxDistance, float verticalDistanceConstraint, SiegePos& pos )
+bool FindSpotRelativeToSource( Go* source, Go* target, bool awayFromTarget, float minDistance, float maxDistance, float minDegreesAngularDeviance, float maxDegreesAngularDeviance, float verticalDistanceConstraint, SiegePos& pos, bool bDropSame )
+bool FindSpotRelativeToSource( Go* source, Go* target, bool awayFromTarget, float minDistance, float maxDistance, float minDegreesAngularDeviance, float maxDegreesAngularDeviance, float verticalDistanceConstraint, SiegePos& pos, bool bDropSame, bool bProjectBothSides )
+UIWindow* FindUIWindow( const char* window_name, const char* sInterface )
+void FinishScript( SFxSID id )
+void FlashElementIcon( int tag, float duration )
+float Floor( float f )
+bool Flush( Goid owner )
+bool Flush( Goid owner, float delay )
+void ForceUpdate( void )
+void ForceUpdateFog( float transTime )
+void ForceUpdateMusic( float transTime )
+void ForceUpdateRain( float transTime )
+void ForceUpdateSnow( float transTime )
+void ForceUpdateWind( float transTime )
+const char* Format( const char* format, ... )
+float FromPercent( float f )
+bool FromString( const char* str, eAlteration& e )
+bool FromString( const char* str, eAxisHint& val )
+bool FromString( const char* str, eCameraInterpolate& val )
+bool FromString( const char* str, eJobAbstractType& Type )
+bool FromString( const char* str, eMoodRoomType& val )
+bool FromString( const char* str, eWorldEvent& val )
+bool FromString( const char* str, FADETYPE& val )
+bool FromString( const char* str, MCP::eOrientMode& x )
+bool FromString( const char* str, MCP::eReqRetCode& x )
+bool FromString( const char* str, MCP::eRequest& x )
+bool FromString( const char* str, MCP::eRID& x )
+static bool FromString( const char* str, Type& obj )
+ReportSys::Context* GamePlayContext( void )
+void GenerateDocs( ReportSys::Context* ctx ) const
+void GenerateDocs( void ) const
+void Generic( const char* msg )
+void GenericF( const char* format, ... )
+bool Get( Go* reference, const QtColl& qtc, const GopColl& in, GopColl& out ) const
+bool Get( Go* reference, eQueryTrait qt, const GopColl& in, GopColl& out ) const
+Go* Get( int index ) const
+Goid Get( int index ) const
+UIWindow* Get( int index ) const
+float Get2DDistance( Go* pTo ) const
+bool GetActive( void ) const
+DWORD GetActiveColor( void ) const
+UICursor* GetActiveCursor( void )
+Goid GetActiveFogGo( void )
+const gpstring& GetActiveIcon( void ) const
+Goid GetActiveMusicGo( void )
+Goid GetActiveRainGo( void )
+Goid GetActiveSnowGo( void )
+Goid GetActiveSunGo( void )
+Goid GetActiveWindGo( void )
+bool GetActorAutoFidgets( void )
+float GetAimingErrorX( void ) const
+float GetAimingErrorY( void ) const
+eActorAlignment GetAlignment( void ) const
+int GetAllignedTeam( void ) const
+bool GetAllowInput( void ) const
+bool GetAllowUserPress( void ) const
+BYTE GetAlpha( void ) const
+float GetAlpha( DWORD intColor )
+float GetAlpha( void ) const
+float GetAlterationSum( const Go* client, eAlteration Alteration ) const
+bool GetAltKey( void ) const
+bool GetAmmoAppearsJIT( void ) const
+const gpstring& GetAmmoAttachBone( void ) const
+bool GetAmmoAttachesToWeapon( void ) const
+Goid GetAmmoCloneSource( void ) const
+Goid GetAmmoReady( void ) const
+float GetAmountDamageToType( void ) const
+const vector_3& GetAngularVelocity( void ) const
+eAnimStance GetAnimStance( void )
+int GetAnimStanceInt( void )
+static Goid GetAnyGoid( void )
+bool GetApplyEnchantmentsOnCast( void ) const
+float GetAreaDamageRadius( void ) const
+nema::HAspect GetAspectHandle( void ) const
+nema::Aspect* GetAspectPtr( void ) const
+float GetAspectTextureSpeed( int texIndex )
+eAttackClass GetAttackClass( void ) const
+const gpstring& GetAttackDamageModifierMax( void ) const
+const gpstring& GetAttackDamageModifierMin( void ) const
+float GetAttackRange( void ) const
+const gpstring& GetAutoExpirationClass( void ) const
+bool GetAutoItems( eQueryTrait itemTrait, GopColl& out ) const
+bool GetAutoItems( GopColl& out ) const
+bool GetAutoItems( QtColl& qtc, GopColl& out ) const
+bool GetAutoPlaceNotify( void ) const
+bool GetAutoTransfer( void ) const
+float GetAvgMoveVelocity( void )
+bool GetBackgroundFill( void ) const
+float GetBaseDuration( eAnimChore c, eAnimStance s ) const
+float GetBaseDuration( void ) const
+eJobAbstractType GetBaseJat( eJobAbstractType in )
+Go* GetBestArmor( void )
+Go* GetBestArmor( void ) const
+Go* GetBestFocusEnemy( void ) const
+const gpstring& GetBlendedPRSDebugName( DWORD i )
+Blender* GetBlender( void )
+float GetBlendGroupAnimWeight( DWORD g, DWORD i )
+float GetBlendGroupWeight( DWORD g )
+float GetBlockCombatMagicChance( void ) const
+float GetBlockCombatMagicChanceAmount( void ) const
+float GetBlockCombatMagicDamage( void ) const
+float GetBlockCustomDamage( const char* damageType ) const
+float GetBlockDamage( void ) const
+bool GetBlockMCP( void ) const
+float GetBlockMeleeDamage( void ) const
+float GetBlockMeleeDamageChance( void ) const
+float GetBlockMeleeDamageChanceAmount( void ) const
+float GetBlockNatureMagicChance( void ) const
+float GetBlockNatureMagicChanceAmount( void ) const
+float GetBlockNatureMagicDamage( void ) const
+float GetBlockPartCombatMagicDamage( void ) const
+float GetBlockPartCustomDamage( const char* damageType ) const
+float GetBlockPartDamage( void ) const
+float GetBlockPartMeleeDamage( void ) const
+float GetBlockPartNatureMagicDamage( void ) const
+float GetBlockPartPiercingDamage( void ) const
+float GetBlockPartRangedDamage( void ) const
+float GetBlockPiercingDamage( void ) const
+float GetBlockRangedDamage( void ) const
+float GetBlockRangedDamageChance( void ) const
+float GetBlockRangedDamageChanceAmount( void ) const
+float GetBlue( DWORD intColor )
+DWORD GetBoneFrozenState( const char* bonename ) const
+bool GetBoneIndex( const char* bone_name, int& bone_index ) const
+int GetBoneIndex( const gpstring& bone_name ) const
+bool GetBoneOrientation( const char* bone_name, vector_3& bone_position, Quat& bone_rotation ) const
+bool GetBool( const char* key )
+bool GetBool( const char* key ) const
+bool GetBool( const char* key, bool def ) const
+bool GetBool( int tag, const char* key )
+bool GetBorder( void ) const
+DWORD GetBorderColor( void ) const
+int GetBorderPadding( void ) const
+double GetBottom( void ) const
+float GetBoundingSphereRadius( void ) const
+int GetBoxHeight( void ) const
+int GetBoxWidth( void ) const
+bool GetBrainActive( void )
+bool GetButtonDown( void ) const
+const siege::SiegeCamera& GetCamera( void ) const
+eCameraMode GetCameraMode( void ) const
+const vector_3& GetCameraPosition( void ) const
+const SiegePos& GetCameraSiegePos( void ) const
+bool GetCanBePickedUp( void )
+bool GetCanLevelUp( void ) const
+bool GetCanSell( void )
+bool GetCanShowHealth( void ) const
+const gpstring& GetCasterStateName( void ) const
+const gpstring& GetCastExperience( void ) const
+float GetCastRange( void ) const
+float GetCastReloadDelay( void ) const
+UINT32 GetCastSubAnimation( void ) const
+float GetChanceToDodgeHit( void ) const
+float GetChanceToDodgeHitMelee( void ) const
+float GetChanceToDodgeHitRanged( void ) const
+float GetChanceToHitBonus( void ) const
+float GetChanceToHitBonusMelee( void ) const
+float GetChanceToHitBonusRanged( void ) const
+bool GetCheck( void ) const
+bool GetCheckState( void ) const
+HAspect GetChild( DWORD k )
+UIListbox* GetChildListbox( void ) const
+const GopColl& GetChildren( void ) const
+UIWindowVec& GetChildren( void )
+eAnimStance GetChoreStance( void )
+bool GetChoreWasRepeated( void )
+float GetClickDelay( void ) const
+bool GetClosestVisible( eQueryTrait trait, GopColl& out ) const
+bool GetClosestVisible( QtColl& qtc, GopColl& out ) const
+Go* GetClosestVisible( eQueryTrait trait ) const
+Go* GetClosestVisible( QtColl& qtc ) const
+eUIMessage GetCode( void ) const
+DWORD GetColor( void ) const
+unsigned int GetColor( void ) const
+int GetColumns( void ) const
+eCombatOrders GetCombatOrders( void ) const
+float GetComfort( void )
+const gpstring& GetCommonTemplate( void ) const
+GoComponent* GetComponent( const char* name )
+bool GetComponentBool( const char* componentName, const char* propertyName )
+bool GetComponentBool( const char* componentName, const char* propertyName, bool defBool )
+float GetComponentFloat( const char* componentName, const char* propertyName )
+float GetComponentFloat( const char* componentName, const char* propertyName, float defFloat )
+int GetComponentInt( const char* componentName, const char* propertyName )
+int GetComponentInt( const char* componentName, const char* propertyName, int defInt )
+Scid GetComponentScid( const char* componentName, const char* propertyName )
+Scid GetComponentScid( const char* componentName, const char* propertyName, Scid defScid )
+const gpstring& GetComponentString( const char* componentName, const char* propertyName )
+const gpstring& GetComponentString( const char* componentName, const char* propertyName, const gpstring& defString )
+Player* GetComputerPlayer( void )
+bool GetConsumesItems( void ) const
+bool GetContinuePickup( void ) const
+bool GetControlKey( void ) const
+ePlayerController GetController( void ) const
+int GetCount( Go* reference, const QtColl& qtc, const GopColl& in ) const
+int GetCount( Go* reference, eQueryTrait qt, const GopColl& in ) const
+float GetCriticalHitChance( void ) const
+bool GetCrowdingMCP( void ) const
+const char* GetCurrentAspectTexture( int texIndex )
+eAnimChore GetCurrentChore( void ) const
+int GetCurrentFlags( void ) const
+float GetCurrentLife( void ) const
+int GetCurrentLine( void ) const
+float GetCurrentMana( void ) const
+float GetCurrentNormalizedTime( void ) const
+SiegeRot GetCurrentOrientationGoal( void ) const
+MCP::eOrientMode GetCurrentOrientMode( void ) const
+Goid GetCurrentOrientTarget( void ) const
+SiegePos GetCurrentOrientTargPos( void ) const
+DWORD GetCurrentReqBlock( void ) const
+eAnimStance GetCurrentStance( void ) const
+eWorldState GetCurrentState( void ) const
+int GetCurrentState( void ) const
+const char* GetCurrentStateName( void ) const
+int GetCurrentSubAnim( void ) const
+const float GetCurrentVelocity( void ) const
+float GetCurrentVelocity( void ) const
+float GetCurrPositionX( int t ) const
+float GetCurrPositionY( int t ) const
+float GetCurrPositionZ( int t ) const
+float GetCurrRotationW( int t ) const
+float GetCurrRotationX( int t ) const
+float GetCurrRotationY( int t ) const
+float GetCurrRotationZ( int t ) const
+int GetCursorX( void ) const
+int GetCursorY( void ) const
+float GetCustomDamageChance( const char* damageType ) const
+float GetCustomDamageMax( const char* damageType ) const
+float GetCustomDamageMin( const char* damageType ) const
+float GetDamageMax( void ) const
+float GetDamageMin( void ) const
+bool GetDamageRange( Goid Client, Goid Weapon, float& min_damage, float& max_damage )
+bool GetDamageRange( Goid Client, Goid Weapon, float& min_damage, float& max_damage, bool bUseDifficulty )
+const gpstring& GetDamageToType( void ) const
+float GetDamageToUndead( void ) const
+const GoDataComponent* GetData( void ) const
+int GetData1( void ) const
+AuditorDb* GetDb( void )
+bool GetDeactivateOverlapped( void ) const
+bool GetDebugMCP( void ) const
+const char* GetDebugName( void ) const
+const gpstring& GetDebugNameString( void ) const
+bool GetDebugState( void ) const
+float GetDefense( void ) const
+bool GetDelimitedBool( const char* in, int index )
+bool GetDelimitedBool( const char* in, int index, char delimiter )
+bool GetDelimitedBool( const char* in, int index, char delimiter, bool defValue )
+float GetDelimitedFloat( const char* in, int index )
+float GetDelimitedFloat( const char* in, int index, char delimiter )
+float GetDelimitedFloat( const char* in, int index, char delimiter, float defValue )
+int GetDelimitedInt( const char* in, int index )
+int GetDelimitedInt( const char* in, int index, char delimiter )
+int GetDelimitedInt( const char* in, int index, char delimiter, int defValue )
+gpstring& GetDelimitedString( const char* in, int index )
+gpstring& GetDelimitedString( const char* in, int index, char delimiter )
+gpstring& GetDelimitedString( const char* in, int index, char delimiter, const char* defValue )
+eDifficulty GetDifficulty( void ) const
+float GetDifficultyFloat( void ) const
+DWORD GetDiffuseColor( void )
+vector_3 const& GetDirection( void )
+bool GetDisabled( void ) const
+bool GetDisableUpdate( void ) const
+eActorDisposition GetDispositionOrders( void ) const
+float GetDistance( const SiegePos& begin, const SiegePos& end )
+float GetDistance( Go* pTo ) const
+float GetDistanceAtPlanEnd( Go* pGo ) const
+const gpstring& GetDockGroup( void ) const
+bool GetDoesBlockCamera( void ) const
+bool GetDoesBlockPath( void ) const
+bool GetDoesDamagePerSecond( void ) const
+double GetDouble( const char* key )
+double GetDouble( int tag, const char* key )
+bool GetDragAllowed( void ) const
+bool GetDraggable( void ) const
+int GetDragGridX( void ) const
+int GetDragGridY( void ) const
+double GetDragTime( void ) const
+double GetDragTimeElapsed( void ) const
+int GetDrawOrder( void ) const
+bool GetDrawSelectionIndicator( void ) const
+bool GetDrawText( void ) const
+eDropInvOption GetDropInvOption( void ) const
+bool GetDropsSpellbook( void ) const
+float GetDuration( DWORD i ) const
+float GetDuration( eAnimChore c, eAnimStance s, DWORD i ) const
+float GetDuration( void ) const
+bool GetDynamicallyLit( void ) const
+const gpstring& GetEffectDuration( void ) const
+int GetElementHeight( void )
+bool GetEnemiesInSphere( float r, GopColl* output ) const
+bool GetEngagedMe( GopColl& out ) const
+int GetEngagedMeAttackerCount( void ) const
+bool GetEngagedMeEnemies( GopColl& out ) const
+int GetEngagedMeMeleeAttackerCount( void ) const
+int GetEngagedMeRangedAttackerCount( void ) const
+Goid GetEngagedObject( void )
+Go* GetEquipped( eEquipSlot slot ) const
+eEquipSlot GetEquippedSlot( const Go* item ) const
+eEquipSlot GetEquippedSlot( Goid item ) const
+const gpstring& GetEquipRequirements( void ) const
+eEquipSlot GetEquipSlot( void ) const
+eWorldEvent GetEvent( void ) const
+bool GetExpanded( void ) const
+float GetExperienceBonus( void ) const
+float GetExplosionMagnitude( void ) const
+bool GetFarthestVisible( eQueryTrait trait, GopColl& out ) const
+bool GetFarthestVisible( QtColl& qtc, GopColl& out ) const
+Go* GetFarthestVisible( eQueryTrait trait ) const
+Go* GetFarthestVisible( QtColl& qtc ) const
+float GetFieldOfView( void )
+const gpstring& GetFileNameOnly( const gpstring& str )
+bool GetFirstN( Go* reference, const QtColl& qtc, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetFirstN( Go* reference, eQueryTrait qt, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetFixedLocation( void ) const
+int GetFleeCount( void ) const
+float GetFleeDistance( void ) const
+float GetFloat( const char* key )
+float GetFloat( const char* key ) const
+float GetFloat( const char* key, float def ) const
+float GetFloat( int tag, const char* key )
+float GetFloat1( void ) const
+Goid GetFocusGo( PlayerId playerId ) const
+Goid GetFocusGo( void ) const
+eFocusOrders GetFocusOrders( void ) const
+bool GetFollowMode( void )
+int GetFontHeight( void ) const
+siege::Console& GetFooterConsole( void )
+const gpstring& GetForcedExpirationClass( void ) const
+bool GetForceGet( void )
+bool GetForceNoRender( void ) const
+Formation* GetFormation( void )
+bool GetFreezeMeshFlag( void )
+bool GetFriendsInSphere( float r, GopColl& output ) const
+eJobAbstractType GetFrontActionJat( void ) const
+Job* GetFrontJob( eJobQ Q ) const
+float GetFullRatio( void )
+float GetFullRatio( void ) const
+float GetGameSpeed( void )
+int GetGameStat( const char* stat )
+double GetGameTimeElapsed( void )
+double GetGameTimeRemaining( void )
+Goid GetGenericStateSpellGoid( const char* sName ) const
+float GetGenericStateSpellLevel( const char* sName ) const
+Go* GetGo( void ) const
+bool GetGoalMCP( void ) const
+Goid GetGoalModifier( void )
+Goid GetGoalObject( void )
+Quat const& GetGoalOrientation( void ) const
+SiegePos const& GetGoalPosition( void ) const
+eEquipSlot GetGoalSlot( void ) const
+const Goid GetGoid( void ) const
+Goid GetGoid( void )
+Goid GetGoid( void ) const
+int GetGold( void ) const
+int GetGoldValue( void ) const
+const MoodSetting& GetGoMoodSetting( Goid go )
+const gpstring& GetGoRequestedMood( Goid go )
+float GetGravity( void ) const
+float GetGreen( DWORD intColor )
+int GetGridAreaFree( void ) const
+int GetGridAreaMax( void ) const
+int GetGridAreaUsed( void ) const
+UIGridbox* GetGridbox( void ) const
+int GetGridHeight( void ) const
+const gpstring& GetGridType( void ) const
+int GetGridWidth( void ) const
+const gpstring& GetGroup( void ) const
+bool GetGuiDisabled( void ) const
+const DWORD GetHandleValue( void )
+WorldMessage* GetHandlingMessage( void )
+bool GetHasBlockedPath( void ) const
+bool GetHasFocus( void ) const
+bool GetHasTexture( void ) const
+bool GetHasToolTip( void ) const
+int GetHeight( void ) const
+const gpstring& GetHelpBoxName( void ) const
+bool GetHidden( void ) const
+bool GetHideMeshFlag( void )
+float GetHighestSkillLevel( void ) const
+bool GetHitSelect( void ) const
+unsigned int GetHour( void ) const
+bool GetHudMCP( void ) const
+bool GetHumanPartyMembersInNodes( int region, int section, int level, int object, GopColl& out )
+static int GetHumanPlayerCount( void )
+Player* GetHumanPlayerOnMachine( DWORD machineId )
+DWORD GetId( void ) const
+PlayerId GetId( void ) const
+static const Quat& GetIDENTITY( void )
+bool GetIgnoreItem( void )
+DWORD GetImeColor( void ) const
+static const Quat& GetINDEFINITE( void )
+int GetIndex( void ) const
+DWORD GetIndexedBoneFrozenState( DWORD bone_index ) const
+bool GetIndexedBoneOrientation( int bone_index, vector_3& bone_position, Quat& bone_rotation ) const
+bool GetIndexedBonePosition( int bone_index, vector_3& bone_position ) const
+bool GetIndexedCornerPosNorm( DWORD sm, DWORD index, vector_3& pos, vector_3& norm ) const
+Scid GetInitialCommand( void )
+SiegePos const& GetInitPosition( void )
+float GetInnerComfortZoneRange( void ) const
+UI_INPUT_TYPE GetInputType( void ) const
+DWORD GetInstanceAttrFlags( void )
+int GetInt( const char* key )
+int GetInt( const char* key ) const
+int GetInt( const char* key, int def ) const
+int GetInt( int tag, const char* key )
+int GetInt1( void ) const
+int GetInt2( void ) const
+float GetIntensity( void ) const
+bool GetInterestOnly( void ) const
+const gpstring& GetInterfaceParent( void ) const
+eCameraInterpolate GetInterpolationMode( void ) const
+static const Quat& GetINVALID( void )
+bool GetInvalid( void ) const
+DWORD GetInvalidColor( void ) const
+static DecalId GetInvalidDecalId( void )
+static GenericId GetInvalidGenericId( void )
+static Goid GetInvalidGoid( void )
+static LightId GetInvalidLightId( void )
+static PlayerId GetInvalidPlayerId( void )
+static Scid GetInvalidScid( void )
+static SiegeId GetInvalidSiegeId( void )
+int GetInventoryHeight( void ) const
+const gpstring& GetInventoryIcon( void ) const
+int GetInventoryMaxStackable( void ) const
+int GetInventoryWidth( void ) const
+bool GetIsCharmable( void ) const
+bool GetIsCollidable( void ) const
+bool GetIsCommandCast( void ) const
+bool GetIsCommonControl( void ) const
+bool GetIsGagged( void ) const
+bool GetIsGhostUsable( void ) const
+bool GetIsHero( void ) const
+bool GetIsIdentified( void ) const
+bool GetIsInvincible( void ) const
+bool GetIsInVisibleNode( void ) const
+bool GetIsMale( void ) const
+bool GetIsMelee( void ) const
+bool GetIsNodeInAnyWorldFrustum( void ) const
+bool GetIsOneShot( void ) const
+bool GetIsOneUse( void ) const
+bool GetIsPossessable( void ) const
+bool GetIsProjectile( void ) const
+bool GetIsRepeater( void ) const
+bool GetIsRespawningAsGhost( void ) const
+bool GetIsSelectable( void ) const
+bool GetIsTwoHanded( void ) const
+bool GetIsUsable( void ) const
+bool GetIsValid( void )
+bool GetIsVisible( void ) const
+bool GetIsWeapon( void ) const
+Go* GetItem( eInventoryLocation il ) const
+Go* GetItemFromTemplate( const gpstring& sTemplate ) const
+float GetItemMarkup( void )
+float GetItemPower( void ) const
+eJobAbstractType GetJobAbstractType( void ) const
+eJobResult GetJobResult( void )
+bool GetJobSuccessful( void )
+float GetJobTravelDistance( void )
+float GetJobTravelDistanceLimit( void ) const
+JUSTIFICATION GetJustification( void ) const
+int GetKey( void ) const
+bool GetLabelMCP( void ) const
+float GetLagMCP( void ) const
+bool GetLastChoreRequestedIsStillValid( Goid owner, eAnimChore ch, eAnimStance st )
+SiegePos& GetLastExecutedUserAssignedActionPosition( void )
+const gpstring& GetLastInventoryIcon( void ) const
+float GetLastRequestTimeRemaining( Goid owner )
+bool GetLButton( void ) const
+bool GetLButtonDown( void ) const
+int GetLeadElement( void )
+double GetLeft( void ) const
+float GetLifeBonusAmount( void ) const
+float GetLifeRatio( void ) const
+float GetLifeRecoveryPeriod( void ) const
+float GetLifeRecoveryUnit( void ) const
+eLifeState GetLifeState( void ) const
+float GetLifeStealAmount( void ) const
+float GetLimitedMovementRange( void ) const
+int GetLineSpacer( void ) const
+const vector_3& GetLinkOffsetPosition( void ) const
+const Quat& GetLinkOffsetRotation( void ) const
+siege::eLogicalNodeFlags GetLiquidFlags( void ) const
+float GetLiquidHeight( void ) const
+Player* GetLocalHumanPlayer( void )
+bool GetLocalPlace( void ) const
+eInventoryLocation GetLocation( const Go* item ) const
+bool GetLockMeshFlag( void )
+float GetLongestAlteration( Goid goid, Goid target, Goid source, Goid item )
+float GetLongestAlteration( Goid target, Goid source )
+const bool GetLoopAtEnd( void ) const
+const gpstring& GetLoreKey( void ) const
+void GetLOSPoint( const Go* go, SiegePos& point ) const
+void GetLOSPoint( const Go* go, vector_3& point ) const
+DWORD GetMachineId( void ) const
+eMagicClass GetMagicClass( void ) const
+float GetMagicLevel( const Go* caster )
+float GetManaBonusAmount( void ) const
+float GetManaCost( void ) const
+const gpstring& GetManaCostModifier( void ) const
+const gpstring& GetManaCostUI( void ) const
+const gpstring& GetManaCostUIModifier( void ) const
+float GetManaRatio( void ) const
+float GetManaRecoveryPeriod( void ) const
+float GetManaRecoveryUnit( void ) const
+float GetManaShield( void ) const
+float GetManaStealAmount( void ) const
+bool GetMarkedForDeletion( void ) const
+const char* GetMaterial( void ) const
+const matrix_3x3& GetMatrixOrientation( void )
+bool GetMax( Go* reference, const QtColl& qtc, const GopColl& in, GopColl& out ) const
+bool GetMax( Go* reference, eQueryTrait qt, const GopColl& in, GopColl& out ) const
+Go* GetMax( Go* reference, eQueryTrait qt, const GopColl& in ) const
+unsigned int GetMaxActiveElements( void )
+float GetMaxAzimuth( void )
+float GetMaxCastLevel( void ) const
+float GetMaxDistance( void )
+float GetMaxLevel( void ) const
+float GetMaxLevelUber( void ) const
+float GetMaxLife( void ) const
+float GetMaxMana( void ) const
+float GetMaxMoveVelocity( void )
+bool GetMaxN( Go* reference, const eQueryTrait* qt, unsigned int qtCount, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetMaxN( Go* reference, const QtColl& qtc, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetMaxN( Go* reference, eQueryTrait qt, unsigned int N, const GopColl& in, GopColl& out ) const
+int GetMaxStringSize( void ) const
+bool GetMayAttack( void ) const
+bool GetMayBeAttacked( void ) const
+bool GetMButton( void ) const
+bool GetMegamapOrient( void ) const
+bool GetMegamapOverride( void ) const
+float GetMeleeAimPiTime( void ) const
+int GetMeleeAttackerCountLimit( void )
+float GetMeleeEngageRange( void ) const
+float GetMeleeFidgetTime( void ) const
+float GetMeleeRecoverTime( void ) const
+float GetMeleeSwingTime( void ) const
+vector_3 const& GetMemberDirection( void )
+Membership const& GetMembership( void ) const
+const gpstring& GetMessage( const char* messageName )
+bool GetMin( Go* reference, const QtColl& qtc, const GopColl& in, GopColl& out ) const
+bool GetMin( Go* reference, eQueryTrait qt, const GopColl& in, GopColl& out ) const
+Go* GetMin( Go* reference, eQueryTrait qt, const GopColl& in ) const
+float GetMinAzimuth( void )
+GoMind* GetMind( void ) const
+float GetMinDistance( void )
+int GetMinDurationAnim( eAnimChore c, eAnimStance s ) const
+float GetMinMoveVelocity( void )
+bool GetMinN( Go* reference, const eQueryTrait* qt, unsigned int qtCount, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetMinN( Go* reference, const QtColl& qtc, unsigned int N, const GopColl& in, GopColl& out ) const
+bool GetMinN( Go* reference, eQueryTrait qt, unsigned int N, const GopColl& in, GopColl& out ) const
+unsigned int GetMinute( void ) const
+eDebugProbe GetMode( void )
+float GetModifierMax( const char* templateName, const char* variationName ) const
+float GetModifierMin( const char* templateName, const char* variationName ) const
+float GetModifierPower( const char* modifierName ) const
+const MoodSetting& GetMoodSetting( const gpstring& moodName )
+int GetMouseX( void ) const
+int GetMouseY( void ) const
+eMovementOrders GetMovementOrders( void ) const
+const gpstring& GetMpWorldName( void ) const
+const gpstring& GetName( void ) const
+void GetName( gpstring& name ) const
+void GetNet( gpstring& out )
+eAnimChore GetNextChore( void ) const
+int GetNextFlags( void ) const
+double GetNextLevelXP( float current_level ) const
+eAnimStance GetNextStance( void ) const
+int GetNextSubAnim( void ) const
+float GetNodalTextureAnimationSpeed( SiegeId node, int tex_index )
+bool GetNodalTextureAnimationState( SiegeId node, int tex_index )
+SiegeGuid& GetNode( void )
+static Goid GetNoneGoid( void )
+float GetNormalizedCursorX( void ) const
+float GetNormalizedCursorY( void ) const
+const UINormalizedRect& GetNormalizedRect( void ) const
+bool GetNormalizeResize( void ) const
+int GetNumActiveItems( const gpstring& sInterface )
+int GetNumberOfChildren( void )
+DWORD GetNumberOfEvents( eAnimEvent ev ) const
+int GetNumCorners( DWORD sm )
+int GetNumDelimitedValues( const char* in )
+int GetNumDelimitedValues( const char* in, char delimiter )
+unsigned int GetNumElements( void )
+int GetNumHires( void )
+int GetNumSubAnims( eAnimChore c, eAnimStance s ) const
+int GetNumSubAnims( void ) const
+int GetNumTracks( void ) const
+float GetObjectDetailLevel( void ) const
+bool GetOccupantsInSphere( const SiegePos& center, float radius, GopColl& out )
+bool GetOccupantsInSphere( float r, GopColl& output ) const
+bool GetOptimizeMCP( void ) const
+Blender* GetOrCreateBlender( void )
+const Quat& GetOrientation( void ) const
+eActionOrigin GetOrigin( void )
+const MoodSetting& GetOriginalMoodSetting( const gpstring& moodName )
+float GetOuterComfortZoneRange( void ) const
+siege::Console& GetOutputConsole( void )
+Go* GetOwningParty( void ) const
+Go* GetParent( void ) const
+HAspect GetParent( void )
+UIWindow* GetParentWindow( void ) const
+bool GetPartyMembersInSphere( float r, GopColl* output ) const
+float GetPContentLevel( void ) const
+eWorldState GetPendingState( void ) const
+int GetPendingState( void ) const
+const char* GetPendingStateName( void ) const
+bool GetPermanentFocus( void ) const
+float GetPersonalSpaceRange( void ) const
+float GetPiercingDamageChance( void ) const
+float GetPiercingDamageChanceAmount( void ) const
+float GetPiercingDamageChanceAmountMelee( void ) const
+float GetPiercingDamageChanceAmountRanged( void ) const
+float GetPiercingDamageChanceMelee( void ) const
+float GetPiercingDamageChanceRanged( void ) const
+float GetPiercingDamageMax( void ) const
+float GetPiercingDamageMeleeMax( void ) const
+float GetPiercingDamageMeleeMin( void ) const
+float GetPiercingDamageMin( void ) const
+float GetPiercingDamageRangedMax( void ) const
+float GetPiercingDamageRangedMin( void ) const
+Player* GetPlayer( const gpwstring& sName )
+Player* GetPlayer( PlayerId playerId )
+Player* GetPlayer( void ) const
+PlayerId GetPlayerId( void ) const
+int GetPlayerStat( const char* stat, PlayerId player )
+float GetPollPeriod( void ) const
+vector_3& GetPos( void )
+const SiegePos& GetPosition( void ) const
+SiegePos const& GetPosition( void )
+void GetPosition( SiegePos& pos ) const
+bool GetPositionBehind( Go* target, SiegePos* pos ) const
+float GetPotionFullRatio( void ) const
+const gpstring& GetPrefixModifierName( void ) const
+bool GetPressedState( void ) const
+eAnimChore GetPreviousChore( void ) const
+int GetPreviousFlags( void ) const
+eCameraMode GetPreviousMode( void ) const
+eAnimStance GetPreviousStance( void ) const
+eWorldState GetPreviousState( void ) const
+int GetPreviousSubAnim( void ) const
+bool GetPrimaryBoneOrientation( vector_3& bone_position, Quat& bone_rotation ) const
+Goid GetProjectileLauncher( void ) const
+int GetPromptIndex( void ) const
+int GetPulloutOffset( void ) const
+const Quat& GetQuatOrientation( void )
+bool GetQuestBool( Goid goid, const char* mapName, const char* keyName ) const
+bool GetQuestBool( Goid goid, const char* mapName, const char* keyName, bool defBool ) const
+float GetQuestFloat( Goid goid, const char* mapName, const char* keyName ) const
+float GetQuestFloat( Goid goid, const char* mapName, const char* keyName, float defFloat ) const
+int GetQuestInt( Goid goid, const char* mapName, const char* keyName ) const
+int GetQuestInt( Goid goid, const char* mapName, const char* keyName, int defInt ) const
+int GetQuestOrder( const gpstring& name )
+const gpstring& GetQuestString( Goid goid, const char* mapName, const char* keyName ) const
+const gpstring& GetQuestString( Goid goid, const char* mapName, const char* keyName, const gpstring& defString ) const
+Goid GetQueueIconGoid( void )
+const gpstring& GetRadioGroup( void ) const
+bool GetRandomizeVelocity( void ) const
+void GetRandomOrientation( Quat& q )
+float GetRangedEngageRange( void ) const
+DWORD GetRank( void )
+const SiegePos& GetRawPosition( void ) const
+bool GetRButton( void ) const
+bool GetRButtonDown( void ) const
+double GetRealTime( void ) const
+DWORD GetRecentEvents( void ) const
+UIRect& GetRect( void )
+float GetRed( DWORD intColor )
+float GetReflectDamageAmount( void ) const
+float GetReflectDamageChance( void ) const
+float GetReflectPiercingDamageAmount( void ) const
+float GetReflectPiercingDamageChance( void ) const
+const gpstring& GetRegionNameForNode( database_guid guid ) const
+float GetReloadDelay( void ) const
+float GetRenderScale( void ) const
+float GetRequiredCastLevel( void ) const
+bool GetRequiresLineOfSight( void ) const
+bool GetRequireStateCheck( void ) const
+double GetRight( void ) const
+bool GetRollover( void ) const
+const gpstring& GetRolloverKey( void ) const
+Go* GetRoot( void )
+Quat& GetRot( void )
+int GetRows( void ) const
+float GetScalarVelocity( DWORD i ) const
+float GetScalarVelocity( eAnimChore c, eAnimStance s, DWORD i ) const
+float GetScalarVelocity( void ) const
+float GetScale( void ) const
+Scid GetScid( void ) const
+bool GetScidBit( Scid scid, int index ) const
+bool GetScidBit( Scid scid, int index, bool defValue ) const
+DWORD GetScidBits( Scid scid ) const
+DWORD GetScidBits( Scid scid, DWORD defValue ) const
+int GetScreenHeight( void ) const
+Go* GetScreenHero( void )
+void GetScreenName( gpstring& name ) const
+Go* GetScreenParty( void )
+bool GetScreenPartyMembersInNodes( int region, int section, int level, int object, GopColl& out )
+int GetScreenWidth( void ) const
+bool GetScrolling( void )
+float GetScrollRate( void ) const
+bool GetScrollThrough( void ) const
+float GetSecondsElapsed( void ) const
+const gpstring& GetSelectedConversation( void )
+Go* GetSelectedItem( void ) const
+eInventoryLocation GetSelectedLocation( void ) const
+Go* GetSelectedMeleeWeapon( void ) const
+Go* GetSelectedRangedWeapon( void ) const
+Go* GetSelectedSpell( void ) const
+int GetSelectedTag( void )
+int GetSelectedTag( void ) const
+void GetSelectedText( gpstring& text )
+Go* GetSelectedWeapon( void ) const
+Goid GetSendFrom( void ) const
+Goid GetSendTo( void ) const
+Scid GetSendToScid( void ) const
+float GetSensorScanPeriod( void ) const
+DWORD GetSharedAttrFlags( void )
+Go* GetShield( void ) const
+bool GetShiftKey( void ) const
+Go* GetShooter( void )
+bool GetShouldDrawShadow( void ) const
+bool GetShowMCP( void ) const
+bool GetShowPathsMCP( void ) const
+bool GetShowSpatialQueries( void )
+bool GetShowTriggerSys( void ) const
+bool GetShowTriggerSysHits( void ) const
+void GetSiegeDifference( vector_3& ret_diff, const SiegePos& pos_orig, const SiegePos& pos_dest )
+float GetSiegeDistance( const SiegePos& pos_orig, const SiegePos& pos_dest )
+float GetSightOriginHeight( void ) const
+float GetSightRange( void ) const
+unsigned int GetSimCount( void ) const
+SimID GetSimID( Goid object )
+const gpstring& GetSkillClass( void ) const
+float GetSkillCoefficientA( void ) const
+float GetSkillCoefficientB( void ) const
+float GetSkillLevel( const char* skill ) const
+bool GetSound( void ) const
+static Scid GetSpawnedScid( void )
+bool GetSpecialKey( void ) const
+float GetSpeedBias( void ) const
+int GetState( void ) const
+const char* GetStateName( int state ) const
+const gpstring& GetStateName( void ) const
+bool GetStore( void ) const
+const gpstring& GetString( const char* key )
+const gpstring& GetString( const char* key ) const
+const gpstring& GetString( const char* key, const char* def ) const
+const gpstring& GetString( int tag, const char* key )
+int GetSubAnimIndex( DWORD fourCC ) const
+int GetSubAnimIndex( eAnimChore c, DWORD fourCC ) const
+bool GetSubAnimsAreLoaded( eAnimChore chore, eAnimStance stance ) const
+const gpstring& GetSuffixModifierName( void ) const
+int GetTabStop( void ) const
+long GetTag( void ) const
+const vector_3& GetTargetPosition( void ) const
+const SiegePos& GetTargetSiegePos( void ) const
+eTargetTypeFlags GetTargetTypeFlags( void ) const
+eTargetTypeFlags GetTargetTypeFlagsNot( void ) const
+int GetTeam( void )
+int GetTeamStat( const char* stat, int team )
+GopColl& GetTempGopColl1( void )
+GopColl& GetTempGopColl2( void )
+GopColl& GetTempGopColl3( void )
+GopColl& GetTempGopCollA( void )
+GopColl& GetTempGopCollB( void )
+GopColl& GetTempGopCollC( void )
+bool GetTemplateBool( const char* templatePath )
+bool GetTemplateBool( const char* templatePath, bool defBool )
+float GetTemplateFloat( const char* templatePath )
+float GetTemplateFloat( const char* templatePath, float defFloat )
+int GetTemplateInt( const char* templatePath )
+int GetTemplateInt( const char* templatePath, int defInt )
+const char* GetTemplateName( void ) const
+Scid GetTemplateScid( const char* templatePath )
+Scid GetTemplateScid( const char* templatePath, Scid defScid )
+const gpstring& GetTemplateString( const char* templatePath )
+const gpstring& GetTemplateString( const char* templatePath, const gpstring& defString )
+SiegePos& GetTempPos1( void )
+QtColl& GetTempQtColl1( void )
+vector_3& GetTempVector1( void )
+bool GetTerrainPosition( const SiegePos& c, float r, SiegePos& pos )
+void GetTerrainPosition( const SiegePos& c, float r, float angle, SiegePos& out )
+bool GetTerrainPositionAtEnd( const SiegePos& begin, const SiegePos& end, float r, float alpha, SiegePos& out )
+bool GetTerrainPositionAtEnd( const SiegePos& begin, const SiegePos& end, float r, float minAngle, float maxAngle, SiegePos& out )
+bool GetTestMCP( void ) const
+void GetText( gpstring& text ) const
+UITextBox* GetTextBox( void )
+DWORD GetTextColor( void ) const
+unsigned int GetTextColor( void ) const
+unsigned int GetTextureIndex( void ) const
+bool GetTiledTexture( void ) const
+double GetTime( void ) const
+float GetTimeElapsedSinceLastEnemySpotted( void ) const
+UITextBox* GetToolTipBox( void ) const
+DWORD GetToolTipColor( void ) const
+const gpstring& GetToolTipColorName( void ) const
+double GetTop( void ) const
+bool GetTopmost( void ) const
+float GetTotalDefense( Goid Client )
+float GetTotalFireResistance( Goid Client )
+float GetTraitValue( const Go* reference, const Go* go, eQueryTrait qt ) const
+UI_CONTROL_TYPE GetType( void ) const
+static const SiegeGuid& GetUndefinedSiegeGuid( void )
+static const SiegePos& GetUndefinedSiegePos( void )
+static const SiegeRot& GetUndefinedSiegeRot( void )
+const vector_3& GetUpVector( void ) const
+eUsageContextFlags GetUsageContextFlags( void ) const
+bool GetUseAimingError( void ) const
+float GetUseRange( void ) const
+const UINormalizedRect& GetUVRect( void ) const
+UINT32 GetValue( void ) const
+SiegePos& GetVariable( UINT32 index, Goid owner )
+const gpstring& GetVariation( void ) const
+const vector_3& GetVectorOrientation( void )
+const vector_3& GetVelocity( void ) const
+float GetVelocity( void ) const
+float GetVelocityX( void ) const
+float GetVelocityY( void ) const
+float GetVelocityZ( void ) const
+bool GetVerbose( void )
+int GetVictoryConditionValue( const char* condition )
+unsigned int GetViewportHeight( void )
+float GetViewportNormalizedHeight( void )
+float GetViewportNormalizedWidth( void )
+unsigned int GetViewportWidth( void )
+float GetVisibilityMemoryDuration( void ) const
+bool GetVisible( eQueryTrait trait, GopColl& out ) const
+bool GetVisible( eQueryTrait trait, GopColl& out, float range ) const
+bool GetVisible( QtColl& qtc, GopColl& out ) const
+bool GetVisible( QtColl& qtc, GopColl& out, float range ) const
+bool GetVisible( void ) const
+Go* GetVisible( eQueryTrait trait ) const
+Go* GetVisible( eQueryTrait trait, float range ) const
+Go* GetVisible( QtColl& qtc ) const
+Go* GetVisible( QtColl& qtc, float range ) const
+float GetW( void ) const
+int GetWaitingToJoinCount( void )
+siege::Console& GetWatchConsole( void )
+float GetWeaponErrorRangeX( void ) const
+float GetWeaponErrorRangeY( void ) const
+float GetWeaponRange( void ) const
+int GetWidth( void ) const
+unsigned int GetWorldSimCount( void )
+float GetX( void ) const
+bool GetXButton1( void ) const
+bool GetXButton2( void ) const
+float GetY( void ) const
+float GetZ( void ) const
+static const Quat& GetZERO( void )
+const vector_3& GetZeroVector( void )
+void GiveFocus( void )
+void Global( const char* globalName )
+void Globals( void )
+bool HandleInputMessage( UIMessage& msg )
+bool HasBlender( void ) const
+bool HasChild( const Go* child ) const
+bool HasChild( Goid child ) const
+bool HasComponent( const char* name ) const
+bool HasEnchantment( Goid goid, const gpstring& sEnchantmentDescription )
+bool HasEnchantmentNamed( Goid goid, const gpstring& sEnchantmentName )
+bool HasEnchantments( Goid goid )
+bool HasEnemiesInSphere( float r ) const
+bool HasEvent( eWorldEvent Event ) const
+bool HasFocus( void ) const
+bool HasGenericState( const char* sName ) const
+bool HasGold( void ) const
+bool HasGoWithScid( Scid scid ) const
+bool HasGridbox( void ) const
+bool HasNonInnateEnchantments( void )
+bool HasPartyMembersInSphere( float r ) const
+bool HasPlayer( PlayerId playerId )
+bool HaveOccupantsInSphere( float r ) const
+void Hide( const char* properties )
+void HideInterface( const gpstring& interface_name )
+void HideToolTip( void )
+bool InAtomicState( void )
+void Indent( void )
+bool Is( const Go* reference, const Go* go, const eQueryTrait* qt, unsigned int qtCount ) const
+bool Is( const Go* reference, const Go* go, const QtColl& qtColl ) const
+bool Is( const Go* reference, const Go* go, eQueryTrait qt ) const
+bool Is( const Go* reference, const Go* go, eQueryTrait qt, float& pNormAdjVal ) const
+bool IsActiveSpell( const Go* item ) const
+bool IsActiveSpell( void ) const
+bool IsActor( void ) const
+bool IsAlive( eLifeState ls )
+bool IsAmbientTrackPlaying( void )
+bool IsAmmo( void ) const
+bool IsAnyHumanParty( void ) const
+bool IsAnyHumanPartyMember( void ) const
+bool IsAnyWeaponEquipped( void ) const
+bool IsAreaWalkable( siege::eLogicalNodeFlags nodeFlags, const SiegePos& center, DWORD numSamples, float radius )
+bool IsArmor( void ) const
+bool IsAttackJat( eJobAbstractType jat )
+bool IsAutoExpirationEnabled( void ) const
+bool IsBattleTrackPlaying( void )
+bool IsBeingWatched( Goid watched ) const
+bool IsBreakable( void ) const
+bool IsCapturingMovie( void ) const
+bool IsCastableOn( Go* target )
+bool IsCastableOn( Go* target, bool CheckMana )
+bool IsCastJat( eJobAbstractType jat )
+bool IsChad( void ) const
+bool IsCleaningUp( void )
+bool IsCommand( void ) const
+bool IsConscious( eLifeState ls )
+bool IsConstructingStandaloneGo( void ) const
+bool IsConsumable( void ) const
+bool IsContainer( void ) const
+bool IsCurrentActionHumanInterruptable( void ) const
+bool IsDead( eLifeState ls )
+bool IsDefensive( void )
+bool IsDroppable( void ) const
+bool IsEditMode( void ) const
+bool IsEmpty( const char* str )
+bool IsEnabled( const char* context )
+bool IsEnabled( void ) const
+bool IsEndGame( eWorldState e )
+bool IsEnemy( const Go* target ) const
+bool IsEquipped( const Go* item ) const
+bool IsEquipped( void ) const
+bool IsExpiring( Go* go ) const
+bool IsFireImmune( void ) const
+bool IsFocused( void ) const
+bool IsFriend( const Go* target ) const
+bool IsGameStarting( eWorldState e )
+bool IsGhost( eLifeState ls )
+bool IsGhost( void ) const
+bool IsGhostUsable( void ) const
+bool IsGlobalGo( void ) const
+bool IsGold( void ) const
+bool IsHeroSpecReady( void ) const
+bool IsHuded( void ) const
+bool IsIdle( void )
+bool IsIn2DRange( Go* target, float range ) const
+bool IsInActiveScreenWorldFrustum( void ) const
+bool IsInActiveWorldFrustum( void ) const
+bool IsInAnyScreenWorldFrustum( void ) const
+bool IsInAnyWorldFrustum( void ) const
+bool IsInEngageRange( Go* target, Go* weapon ) const
+bool IsInFrontend( eWorldState e )
+bool IsInGame( eWorldState e )
+bool IsInHotGroup( Goid goid )
+bool IsInHotGroup( void ) const
+bool IsInMeleeEngageRange( Go* target ) const
+bool IsInProjectileRange( float firing_velocity, const SiegePos& target_position )
+bool IsInRange( const Go* a, const Go* b, float range )
+bool IsInRange( const SiegePos& PosA, const SiegePos& PosB, float Range )
+bool IsInRange( Go* target, float range ) const
+bool IsInRange( Go* target, Go* weapon, eRangeLimit limit ) const
+bool IsInRangedEngageRange( Go* target ) const
+bool IsInReport( void ) const
+bool IsInsideInventory( void ) const
+bool IsInSpellRange( Go* target, Go* spell ) const
+bool IsInStagingArea( eWorldState e )
+bool IsInstance( void ) const
+bool IsInterfaceVisible( const gpstring& interface_name )
+bool IsInterruptable( void ) const
+bool IsInViewFrustum( void ) const
+bool IsInVisibilityCone( Go* target ) const
+bool IsItem( void ) const
+bool IsJames( void ) const
+bool IsLeafAttackJat( eJobAbstractType jat )
+bool IsLifeHigh( void ) const
+bool IsLifeLow( void ) const
+bool IsLoading( eWorldState e )
+bool IsLocalGo( void ) const
+bool IsLoreBook( void ) const
+bool IsLosClear( const Go* from, const Go* to ) const
+bool IsLosClear( const Go* from, const SiegePos& to ) const
+bool IsLosClear( const SiegePos& from, const SiegePos& to ) const
+bool IsLosClear( const SiegePos& target ) const
+bool IsLosClear( Go* target ) const
+bool IsManaHigh( void ) const
+bool IsManaLow( void ) const
+bool IsMarkedForDeletion( void )
+bool IsMeleeWeapon( void ) const
+bool IsMeleeWeaponEquipped( void ) const
+bool IsMeleeWeaponSelected( void ) const
+bool IsMouseShadowed( Goid goid ) const
+bool IsMouseShadowed( void ) const
+bool IsMultiPlayer( void )
+bool IsMultiPlayer( void ) const
+bool IsNodalPathingConnected( SiegeId targetNode, SiegeId connectNode )
+bool IsNodeInAnyFrustum( void ) const
+bool IsNoStartupFx( void ) const
+bool IsOffensive( void )
+bool IsOmni( void ) const
+bool IsOrientModeDefined( void ) const
+bool IsPackOnly( void ) const
+bool IsPassThrough( void ) const
+bool IsPotion( void ) const
+bool IsPrimaryThread( void )
+bool IsProbed( void ) const
+bool IsProcessingMessage( void ) const
+bool IsQuestActive( const gpstring& name )
+bool IsQuestCompleted( const gpstring& name )
+bool IsRangedWeapon( void ) const
+bool IsRangedWeaponEquipped( void ) const
+bool IsRangedWeaponSelected( void ) const
+bool IsReadyToPlay( void )
+bool IsRejuvenationPotion( void ) const
+bool IsRidingElevator( void ) const
+bool IsScreenParty( void ) const
+bool IsScreenPartyMember( void ) const
+bool IsScreenPlayer( void ) const
+bool IsScreenPlayerOwned( void ) const
+bool IsSelectable( void ) const
+bool IsSelected( Goid goid ) const
+bool IsSelected( void ) const
+bool IsSendLocalOnly( DWORD machineId )
+bool IsServerLocal( void )
+bool IsServerRemote( void )
+bool IsShield( void ) const
+bool IsShuttingDown( void )
+bool IsSinglePlayer( void )
+bool IsSinglePlayer( void ) const
+bool IsSlotEquipped( eEquipSlot slot ) const
+bool IsSpawned( void ) const
+bool IsSpell( void ) const
+bool IsSpellBook( void ) const
+bool IsSpellInProgress( const gpstring& templateName ) const
+bool IsSpellSelected( void ) const
+bool IsStagingArea( eWorldState e )
+bool IsStandardTrackPlaying( void )
+bool IsStateChangePending( void )
+bool IsStateChangePending( void ) const
+bool IsTeamMember( Goid object ) const
+bool IsToolTipVisible( void ) const
+bool IsUsable( void ) const
+bool IsUserAssigned( void )
+bool IsUserPaused( void )
+bool IsValid( void ) const
+bool IsValidMp( void ) const
+bool IsVictoryConditionMet( const char* condition )
+bool IsVictoryConditionMet( const char* condition, int team )
+bool IsWatching( Goid watcher ) const
+bool IsWeapon( void ) const
+bool IsWorldEditMode( void )
+bool IsZero( void ) const
+bool ItemsVisible( void ) const
+bool JobRecentlyFailedToPathTo( Go* target )
+bool JoinLanGame( const char* playerName, const char* password )
+bool JoinLanGame( const char* playerName, const char* password, bool errorOnFail )
+void LeaveAtomicState( void )
+gpstring& Left( gpstring& str, int len )
+float Length( const vector_3& v )
+float Length2( const vector_3& v )
+double LevelToXP( float level ) const
+bool ListItems( eInventoryLocation il, GopColl& items ) const
+bool ListItems( eQueryTrait qt, eInventoryLocation il, GopColl& items ) const
+bool ListItems( QtColl& qtc, eInventoryLocation il, GopColl& items ) const
+void LoadCheckTexture( const gpstring& texture )
+void LoadSelectionTexture( const gpstring& texture )
+void LoadTexture( const gpstring& texture, bool bResizeWindow )
+void LoadTexture( unsigned int texture )
+UICursor* LoadUICursor( const gpstring& name, const gpstring& sInterface )
+bool LocationContainsTemplate( eInventoryLocation il, const gpstring& sTemplate )
+void MainAssert( void )
+void MainCrash( void )
+void MainFatal( void )
+void MainWatson( void )
+static SiegeGuid& Make( const char* guidText )
+static SiegeGuid& Make( unsigned int guidInt )
+static SiegePos& Make( float x, float y, float z, const SiegeGuid& guid )
+static SiegePos& Make( float x, float y, float z, unsigned int guidInt )
+static SiegeRot& Make( float x, float y, float z, float w, const SiegeGuid& guid )
+static SiegeRot& Make( float x, float y, float z, float w, unsigned int guidInt )
+eAnimChore MakeAnimChore( DWORD x )
+AnimReq& MakeAnimReq( eAnimChore chore )
+CameraPosition& MakeCameraPosition( const SiegePos& siegePos, const Quat& quat, float distance )
+CameraQuatPosition& MakeCameraPosition( const SiegePos& siegePos, const Quat& quat )
+DWORD MakeColor( const vector_3& color )
+DWORD MakeColor( const vector_3& color, float alpha )
+DWORD MakeColor( float red, float green, float blue )
+DWORD MakeColor( float red, float green, float blue, float alpha )
+eCombatOrders MakeCombatOrders( DWORD x )
+const char* MakeCurrentLocationText( void ) const
+const char* MakeCurrentLocationTextFull( void ) const
+const char* MakeCurrentSourceFile( void ) const
+DecalId MakeDecalId( DWORD d )
+static SiegePos& MakeDefault( void )
+static SiegeRot& MakeDefault( void )
+const char* MakeFourCcString( int fourCc )
+const char* MakeFourCcString( int fourCc, bool reverse )
+GoCloneReq& MakeGoCloneReq( const char* templateName )
+GoCloneReq& MakeGoCloneReq( const char* templateName, PlayerId playerId )
+GoCloneReq& MakeGoCloneReq( Goid cloneSource )
+GoCloneReq& MakeGoCloneReq( Goid cloneSource, PlayerId playerId )
+GoCloneReq& MakeGoCloneReq( Goid parent, const char* templateName )
+GoCloneReq& MakeGoCloneReq( Goid parent, const char* templateName, PlayerId playerId )
+GoCloneReq& MakeGoCloneReq( Goid parent, Goid cloneSource )
+GoCloneReq& MakeGoCloneReq( Goid parent, Goid cloneSource, PlayerId playerId )
+GoCloneReq& MakeGoCloneReq( void )
+Goid MakeGoid( DWORD intGoid )
+DWORD MakeInt( DecalId d )
+DWORD MakeInt( Goid g )
+DWORD MakeInt( LightId l )
+DWORD MakeInt( PlayerId p )
+DWORD MakeInt( Scid s )
+DWORD MakeInt( SiegeId s )
+int MakeInt( eAnimChore x )
+int MakeInt( eCombatOrders co )
+int MakeInt( eMovementOrders mo )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, const SiegePos& pos )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, const SiegePos& pos, Goid modifier )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, eEquipSlot slot )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, Goid goal )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, Goid goal, const SiegePos& pos )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, Goid goal, Goid modifier )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, Goid goal, Goid modifier, const SiegePos& pos )
+JobReq& MakeJobReq( eJobAbstractType type, eJobQ q, eQPlace place, eActionOrigin origin, Goid item, eEquipSlot slot )
+LightId MakeLightId( DWORD d )
+eMovementOrders MakeMovementOrders( DWORD x )
+PlayerId MakePlayerId( DWORD d )
+Quat& MakeQuat( float x, float y, float z, float w )
+eReqRetCode MakeRequest( Goid owner, eRequest type )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegePos& targetPos )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegePos& targetPos, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegePos& targetPos, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegePos& targetPos, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegeRot& targetRot )
+eReqRetCode MakeRequest( Goid owner, eRequest type, const SiegeRot& targetRot, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, const SiegePos& targetPos, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, const SiegePos& targetPos, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, Goid targetGo, float look_ahead, float max_time, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, DWORD subanim, Goid targetGo, float look_ahead, float max_time, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, eAnimChore ch, DWORD subanim, DWORD flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, const SiegePos& targetPos, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, const SiegePos& targetPos, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, DWORD subanim, const SiegePos& targetPos, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, DWORD subanim, const SiegePos& targetPos, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, DWORD subanim, Goid targetGo, float look_ahead, float max_time, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, DWORD subanim, Goid targetGo, float look_ahead, float max_time, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, Goid targetGo, float look_ahead, float max_time, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, float duration, Goid targetGo, float look_ahead, float max_time, float range, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, Goid targetGo )
+eReqRetCode MakeRequest( Goid owner, eRequest type, Goid targetGo, eReqFlag flags )
+eReqRetCode MakeRequest( Goid owner, eRequest type, Goid targetGo, float look_ahead, float max_time, float range )
+eReqRetCode MakeRequest( Goid owner, eRequest type, Goid targetGo, float look_ahead, float max_time, float range, eReqFlag flags )
+Scid MakeScid( DWORD intScid )
+SiegeId MakeSiegeId( DWORD d )
+const char* MakeSiegePosString( const SiegePos& pos )
+gpstring& MakeStringF( const char* format, ... )
+TTMessages& MakeTTMessages( void )
+UIMessage& MakeUIMessage( eUIMessage code )
+vector_3& MakeVector( float x, float y, float z )
+void MarkCleaningUp( void )
+void MarkForDeletion( eJobResult jr )
+void MarkForDeletion( void )
+void MarkInterfaceForActivation( const gpstring& interface_name, bool bShow )
+void MarkInterfaceForDeactivation( const gpstring& interface_name )
+float MaxFloat( float a, float b )
+int MaxInt( int a, int b )
+bool MayAutoCastLifeDamagingSpell( void )
+bool MayAutoCastLifeHealingSpell( void )
+bool MayAutoUseMeleeWeapon( void )
+bool MayAutoUseRangedWeapon( void )
+bool MaySDoJob( eJobAbstractType jat )
+void MessageBox( const char* msg )
+void MessageBoxF( const char* format, ... )
+bool MessagesAreInSync( Goid owner, eRID reqblock, eWorldEvent evt )
+gpstring& Mid( gpstring& str, int pos )
+gpstring& Mid( gpstring& str, int pos, int len )
+float MinFloat( float a, float b )
+int MinInt( int a, int b )
+bool Move( eQPlace place, eActionOrigin origin, bool followMode )
+void Notify( const gpstring& message, UIWindow* ui_window )
+DWORD NumActiveAnims( void ) const
+int NumSubAnimsForStance( DWORD stance ) const
+bool OnAlertProjectileNearMissedAttack( void ) const
+bool OnAlertProjectileNearMissedFlee( void ) const
+void OnCCWorldMessage( Skrit::Object* skrit, eWorldEvent, const WorldMessage* )
+bool OnEnemyEnteredICZAttack( void ) const
+bool OnEnemyEnteredICZFlee( void ) const
+bool OnEnemyEnteredICZSwitchToMelee( void ) const
+bool OnEnemyEnteredOCZAttack( void ) const
+bool OnEnemyEnteredOCZFlee( void ) const
+bool OnEnemyEnteredWeaponEngageRangeAttack( void ) const
+bool OnEnemySpottedAlertFriends( void ) const
+bool OnEnemySpottedAttack( void ) const
+bool OnEnemySpottedFlee( void ) const
+bool OnEngagedFleedAbortAttack( void ) const
+bool OnEngagedLostConsciousnessAbortAttack( void ) const
+bool OnEngagedLostLoiter( void ) const
+bool OnEngagedLostReturnToJobOrigin( void ) const
+bool OnFriendEnteredICZAttack( void ) const
+bool OnFriendEnteredICZFlee( void ) const
+bool OnFriendEnteredOCZAttack( void ) const
+bool OnFriendEnteredOCZFlee( void ) const
+void OnJobInit( Skrit::Object* skrit, Job* )
+void OnJobInitPointers( Skrit::Object* skrit, Job* )
+bool OnJobReachedTravelDistanceAbortAttack( void ) const
+bool OnLifeRatioLowFlee( void ) const
+bool OnManaRatioLowFlee( void ) const
+void OnProjectileCollision( Goid Projectile, Goid Collided )
+void OnResetChore( Skrit::HObject skrit )
+void OnStartChore( Skrit::HObject skrit, int subanim, int flags )
+void OnUpdate( Skrit::HObject skrit, float delta_t )
+void OnWorldMessage( Skrit::Object* skrit, eWorldEvent, const WorldMessage* )
+DWORD OpenBlendGroup( void )
+float OrbitAngleToTarget( Goid go, Goid target )
+void Outdent( void )
+bool Output( const char* data )
+bool Output( const char* data, int len )
+bool Output( const gpstring& data )
+bool OutputEol( void )
+bool OutputF( const char* format, ... )
+bool OutputRaw( const char* data )
+bool OutputRaw( const char* data, int len )
+bool Pause( void )
+void Perf( const char* msg )
+void PerfF( const char* format, ... )
+void PerfLog( const char* msg )
+ReportSys::Context* PerfLogContext( void )
+void PerfLogF( const char* format, ... )
+float Pi( void )
+bool PickSafeSpotAwayFrom( Go* target, float distance, SiegePos& pos ) const
+float PiHalf( void )
+void PlaceInterfaceOnTop( const char* interface_name )
+void PlayAmbientTrack( float fadeTime )
+void PlayBattleTrack( float fadeTime )
+DWORD PlayMaterialSound( const char* eventName, const char* dstMaterial, bool local3d )
+DWORD PlayMaterialSound( const char* eventName, Goid dstGoid, bool local3d )
+DWORD PlaySound( const char* soundName, bool local3d, GPGSound::eSampleType sType )
+DWORD PlaySound( const char* soundName, GPGSound::eSampleType sType, float minDist, float maxDist, bool bLoop )
+void PlayStandardTrack( float fadeTime )
+DWORD PlayVoiceSound( const char* eventName, bool local3d )
+DWORD PlayVoiceSound( const char* eventName, float minDist, float maxDist, bool bLoop )
+void PostWorldMessage( eWorldEvent event, Goid from, Goid to, DWORD data, float delay )
+void PostWorldMessage( eWorldEvent event, Goid from, Goid to, float delay )
+void PostWorldMessage( eWorldEvent event, Goid from, Scid to, DWORD data, float delay )
+void PostWorldMessage( eWorldEvent event, Goid from, Scid to, float delay )
+void PreloadCloneSource( Go* client, const char* templateName )
+bool PreloadFuelBlock( const char* address, bool recurse )
+void PrepareToDrawNow( bool includeTextures )
+void PrepareToDrawNow( void )
+void Print( const char* name )
+void PrintDbList( void )
+bool ProcessAction( UI_ACTION action, const gpstring& parameter )
+void ProcessChatMessage( gpwstring chatText, const char* sInterface )
+void ProcessChatMessage( UIEditBox* eb, const char* sInterface )
+bool ProcessMessage( UIMessage& msg )
+void ProfilePContentDb( const char* query, int repeat )
+GoComponent* QueryComponent( const char* name, bool mustExist )
+float RadiansToDegrees( float f )
+float RandomFloat( float maxFloat )
+float RandomFloat( float minFloat, float maxFloat )
+int RandomInt( int maxInt )
+int RandomInt( int minInt, int maxInt )
+bool ReceiveMessage( const UIMessage& msg )
+bool ReconstructDependancy( Goid src, Goid tgt, float reqrange )
+int ReformatTooltip( const gpstring& sText, int lineNum, DWORD dwColor )
+void Reload( void )
+bool ReloadContentDb( void )
+bool ReloadObjects( void )
+bool ReloadWorld( bool fullRestart )
+void RemoveActiveItem( UIWindow* pItem )
+void RemoveAllChildren( void )
+void RemoveAllElements( void )
+void RemoveAllFromHotGroup( void )
+void RemoveCameraPosition( const gpstring& point_name )
+void RemoveChild( Go* child )
+void RemoveChild( UIWindow* pWindow )
+void RemoveElement( const gpstring& element )
+void RemoveElement( int tag )
+bool RemoveFromHotGroup( Goid goid )
+void RemoveMemberNow( Go* member )
+void ReplaceHotGroup( const GopColl& coll )
+void Report( const char* contextName, const char* msg )
+void Report( ReportSys::Context* context, const char* msg )
+void ReportF( const char* contextName, const char* format, ... )
+void ReportF( ReportSys::Context* context, const char* format, ... )
+void ReportItemSwitching( Go* pToEquip )
+void ReqResetSensorsSelfAndVisible( void )
+int Request( eWorldState next )
+int Request( eWorldState next, float time )
+bool RequestBeyondRange( MCP::eReqRetCode code )
+void RequestEnd( void )
+bool RequestFailed( MCP::eReqRetCode code )
+bool RequestOk( MCP::eReqRetCode code )
+void RequestProcessHitEngaged( void )
+bool RequestQuit( bool force )
+void ResetBlender( void )
+void ResetButtonStatus( void )
+void ResetMoodVolume( float fadeTime )
+void ResetSensors( void )
+void ResetTimerSeconds( int id, float timeFromBase )
+void ResetTimeWarp( void )
+void Resize( int width, int height )
+void ResizeSlider( void )
+void RestoreLastMembership( void )
+void RestoreWorldViewport( float duration )
+bool Resume( void )
+gpstring& Right( gpstring& str, int len )
+bool Rotate( float rad )
+void RotateBoneX( const char* b, float a )
+void RotateBoneX( const char* bonename, float anginradians, bool relative )
+void RotateBoneY( const char* b, float a )
+void RotateBoneY( const char* bonename, float anginradians, bool relative )
+void RotateBoneZ( const char* b, float a )
+void RotateBoneZ( const char* bonename, float anginradians, bool relative )
+void RotateIndexedBoneX( int b, float a )
+void RotateIndexedBoneX( int bonenum, float anginradians, bool relative )
+void RotateIndexedBoneY( int b, float a )
+void RotateIndexedBoneY( int bonenum, float anginradians, bool relative )
+void RotateIndexedBoneZ( int b, float a )
+void RotateIndexedBoneZ( int bonenum, float anginradians, bool relative )
+bool RotateMembers( float rad )
+int Round( float f )
+float RoundToFloat( float f )
+void RSAckLatency( float serverTime )
+void RSActivateChapter( const char* name, int state )
+FuBiCookie RSActivateDialogue( void )
+void RSActivateQuest( const char* name, int state )
+FuBiCookie RSAdd( Go* item, eInventoryLocation il, eActionOrigin origin, bool autoPlace )
+FuBiCookie RSAddGold( int gold )
+void RSAddMemberNow( Go* member )
+FuBiCookie RSAddPackmule( Go* pHire, Go* pBuyer )
+void RSAddShopper( Goid shopper )
+void RSAddToDestGridbox( GridItem item, Goid destTrade, Goid sourceTrade )
+void RSAddToStore( Goid item, Goid member, int value )
+void RSAttemptTradeCompletion( Go* pSource, Go* pDest )
+FuBiCookie RSAutoEquip( eEquipSlot slot, Goid item, eActionOrigin origin )
+FuBiCookie RSAutoEquip( eEquipSlot slot, Goid item, eActionOrigin origin, bool bAutoplace )
+void RSCancelTrade( Go* pSource, Go* pDest )
+void RSCastLifeHealingSpell( eActionOrigin jo )
+FuBiCookie RSCastLifeHealingSpells( const_mem_ptr ptr, eActionOrigin jo )
+void RSChat( const gpwstring& sChat )
+void RSChat( const gpwstring& sChatText )
+void RSChatPlayer( const gpwstring& sChat, Player* player )
+void RSChatPlayer( const gpwstring& sChatText, Player* player )
+FuBiCookie RSClearFocusGo( PlayerId playerId )
+FuBiCookie RSCloneGo( const GoCloneReq& cloneReq )
+FuBiCookie RSCloneGo( const GoCloneReq& cloneReq, const char* templateName )
+FuBiCookie RSCollectLoot( const_mem_ptr ptr )
+FuBiCookie RSCollectLootMp( Goid member, const_mem_ptr ptr )
+FuBiCookie RSCombinePotions( Go* pSource, Go* pDest, Go* pMember, float fillAmount, float amountLeft )
+void RSCompletedQuest( const char* name, Goid activator )
+void RSCompleteTrade( Go* pSource, Go* pDest )
+FuBiCookie RSCreateAddItem( eInventoryLocation il, const gpstring& templateName )
+FuBiCookie RSCreatePlayer( const wchar_t* name, ePlayerController controller )
+FuBiCookie RSCreateTombstone( Goid member )
+void RSDeactivateQuest( const char* name )
+FuBiCookie RSDisplayImportCharacter( const gpstring& templateName, DWORD machineId )
+void RSDisplayMessage( const gpwstring& message, DWORD color )
+void RSDoJob( const JobReq& req )
+FuBiCookie RSDoJobPacker( const_mem_ptr packola )
+void RSDoJobPacker( const_mem_ptr packola )
+void RSDrinkLifeHealingPotion( eActionOrigin jo )
+FuBiCookie RSDrinkLifeHealingPotions( const_mem_ptr ptr, eActionOrigin jo )
+void RSDrinkManaHealingPotion( eActionOrigin jo )
+FuBiCookie RSDrinkManaHealingPotions( const_mem_ptr ptr, eActionOrigin jo )
+void RSDrop( Go* item, SiegePos Pos, eQPlace QPlace, eActionOrigin origin )
+void RSDropGold( int gold, SiegePos Pos, eQPlace QPlace, eActionOrigin origin )
+FuBiCookie RSEquip( eEquipSlot slot, Goid item, eActionOrigin origin )
+FuBiCookie RSGeneratePortrait( PlayerId playerId )
+void RSGet( Go* item, eQPlace place, eActionOrigin origin )
+void RSGive( Go* target, Go* item, eQPlace place, eActionOrigin origin )
+void RSGoldTransferComplete( Go* pMember, int gold )
+void RSGuard( Go* target, eQPlace place, eActionOrigin origin )
+void RSImportCharacter( const gpstring& spec, int characterIndex )
+FuBiCookie RSJoinTeam( TeamId team, PlayerId player )
+void RSKeepMeAlive( void )
+FuBiCookie RSLeaveStagingArea( PlayerId playerId )
+void RSMarkForDeletion( Go* go, bool retire, bool fadeOut, bool mpdelayed )
+void RSMarkForDeletion( Goid goid, bool retire, bool fadeOut, bool mpdelayed )
+void RSMarkForDeletion( Scid scid, bool retire, bool fadeOut, bool mpdelayed )
+void RSMarkGoAndChildrenForDeletion( Go* go, bool retire, bool fadeOut, bool mpdelayed )
+void RSMarkGoAndChildrenForDeletion( Goid goid, bool retire, bool fadeOut, bool mpdelayed )
+void RSMarkGoAndChildrenForDeletion( Scid scid, bool retire, bool fadeOut, bool mpdelayed )
+void RSMove( const SiegePos& Pos, eQPlace place, eActionOrigin origin )
+void RSPaperDollHandleItem( Goid member, eEquipSlot slot, Goid inventory_item )
+void RSPauseAllClients( bool pause, PlayerId requestingPlayer )
+FuBiCookie RSRemove( Go* item, bool drop )
+FuBiCookie RSRemove( Go* item, bool drop, Go* dropFor )
+void RSRemoveFromDestGridbox( int item, Player* destPlayer )
+void RSRemoveFromStore( Goid item, Goid member, int cost, bool bAutoPlace )
+void RSRemoveMemberNow( Go* member )
+void RSRemoveShopper( Goid shopper )
+void RSReqInitiateTrade( Go* pSource, Go* pDest, Go* pItem )
+void RSResetUnconsciousDuration( float duration )
+FuBiCookie RSReviveCharacter( Goid member )
+void RSRotateSpells( bool bPrimarySlot, Goid member )
+FuBiCookie RSSelect( eInventoryLocation il, eActionOrigin origin )
+FuBiCookie RSSelectConversation( const char* sConversation )
+FuBiCookie RSSelectNextTeam( PlayerId player, bool reverse )
+FuBiCookie RSSelectTeam( PlayerId player, const gpstring& texture )
+void RSSendReqTalkEnd( Goid member, Goid talker )
+void RSSetButtonValue( const gpstring& sValue )
+void RSSetCombatOrders( eCombatOrders Order )
+void RSSetCurrentAspectTexture( int texIndex, const char* textureName )
+void RSSetDispositionOrders( eActorDisposition Order )
+FuBiCookie RSSetFocusGo( Goid goid )
+void RSSetFocusOrders( eFocusOrders Order )
+void RSSetForceGet( bool bSet )
+FuBiCookie RSSetGameEnded( bool bSet )
+void RSSetGameSpeed( float x )
+FuBiCookie RSSetGold( int gold )
+FuBiCookie RSSetGoldValue( int value )
+FuBiCookie RSSetHeroCloneSourceTemplate( const gpstring& name )
+FuBiCookie RSSetHeroHead( const gpstring& name )
+void RSSetHeroName( const gpwstring& name )
+FuBiCookie RSSetHeroSkin( ePlayerSkin skin, const gpstring& name )
+FuBiCookie RSSetHeroUberLevel( float level )
+FuBiCookie RSSetIsOnZone( bool flag )
+void RSSetLoadProgress( float ratio )
+FuBiCookie RSSetLocation( Go* item, eInventoryLocation il, bool autoPlace )
+void RSSetMainCampaignWon( bool bSet )
+void RSSetMovementOrders( eMovementOrders Order )
+FuBiCookie RSSetName( const gpwstring& name )
+FuBiCookie RSSetReadyToPlay( bool flag )
+FuBiCookie RSSetStartingGroup( const gpstring& sGroup )
+FuBiCookie RSSetTeamSign( PlayerId player, const gpstring& teamSign )
+FuBiCookie RSSetTradeGoldAmount( int gold )
+void RSSetTradeInvalid( Go* pSource )
+void RSSetTradeValid( Go* pSource )
+FuBiCookie RSSetWorldState( eWorldState state )
+void RSStop( eActionOrigin origin )
+void RSTalk( Go* pObject, Go* pMember, bool noqueueclear )
+void RSTradeAccept( bool bAccept, Player* sourcePlayer, Player* destPlayer )
+void RSTradeFailed( Go* pSource, Go* pDest )
+void RSTradeZeroGold( Go* pSource, Go* pDest )
+FuBiCookie RSTransfer( Go* item, Go* dest, eInventoryLocation il, eActionOrigin origin, bool autoPlace )
+FuBiCookie RSUnequip( eEquipSlot slot, eActionOrigin origin )
+void RSUpdateQuestCompletion( const char* name, Goid activator )
+void RSUse( Go* item, eQPlace place, eActionOrigin origin )
+void RSUserPause( bool pause, PlayerId requestingPlayer )
+SFxSID RunScript( const char* sName, Goid target, Goid source, const char* sParams, Goid Owner, eWorldEvent type )
+bool RunScriptSpecial( const char* sName, const char* sParams, Goid Owner, eWorldEvent type, const SiegePos& target_pos, float radius, float x_offset, float y_offset, float z_offset )
+void SActivateTip( const gpstring& sTip, Goid target )
+void SAddGenericState( const char* sName, const char* sDescription, float timeout, Goid caster, Goid spell, float spell_level )
+bool SameNoCase( const char* l, const char* r )
+bool SameNoCase( const char* l, const char* r, int len )
+bool SameWithCase( const char* l, const char* r )
+bool SameWithCase( const char* l, const char* r, int len )
+void SAnimate( const AnimReq& animReq )
+void SApplyEnchantments( Goid target, Goid source )
+void SApplyEnchantmentsByName( Goid target, Goid source, const char* sName )
+FuBiCookie SAssignFrustumToGo( FrustumId frustumId, Goid goid )
+bool SAutoGet( Goid item, eActionOrigin origin )
+bool SAutoGive( Goid actor, Goid item, eActionOrigin origin )
+bool SAutoUse( Goid item, eActionOrigin origin, bool bDeleteExpendedItem )
+bool SaveGame( const char* saveName )
+void SBanPlayer( PlayerId playerId )
+bool SBeginGive( Goid actor, eActionOrigin origin )
+void SBeginUse( Goid item )
+bool Scale( float scale )
+bool SCast( Go* target )
+Goid SCloneGo( const GoCloneReq& cloneReq )
+Goid SCloneGo( const GoCloneReq& cloneReq, const char* templateName )
+void SCopyMembership( Goid go )
+FuBiCookie SCreateFrustumForGo( Goid goid )
+Goid SCreateGo( const GoCreateReq& createReq )
+void Screen( const char* msg )
+void ScreenF( const char* format, ... )
+bool ScreenShot( const char* fileName )
+bool ScreenShot( const wchar_t* fileName )
+void SDeactivateGuiItems( void )
+void SDeactivateTrigger( Goid owngoid, WORD trignum )
+void SDisplayMessage( const char* msgName )
+void SDisplayMessage1Party( const char* msgName, Go* party )
+void SDisplayMessage2Party( const char* msgName, Go* party1, Go* party2 )
+Job* SDoJob( const JobReq& req )
+bool Select( bool select )
+bool Select( Goid goid )
+bool Select( Goid goid, bool select )
+bool Select( void )
+bool SelectAllPartyMembers( void )
+void SelectElement( const gpstring& sElement )
+void SelectElement( int tag )
+void SelectFirstElement( void )
+void SelectLastElement( void )
+bool SelectLastPlayer( void )
+void SelectNextElement( void )
+void SelectNextPage( void )
+bool SelectNextPlayer( void )
+void SelectPreviousElement( void )
+void SelectPreviousPage( void )
+bool Send( const WorldMessage& msg )
+bool SendDelayed( const WorldMessage& msg, float delay )
+bool SEndGive( Goid actor, Goid item, eActionOrigin origin )
+bool SendUIMessage( eUIMessage code, const char* window_name )
+bool SendUIMessage( eUIMessage code, const char* window_name, const char* sInterface )
+void SEndUse( Goid item )
+void SendWorldMessage( eWorldEvent event, Goid from, Goid to )
+void SendWorldMessage( eWorldEvent event, Goid from, Goid to, DWORD data )
+void SendWorldMessage( eWorldEvent event, Goid from, Scid to )
+void SendWorldMessage( eWorldEvent event, Goid from, Scid to, DWORD data )
+void Set( int index, Go* g )
+void Set( int index, Goid g )
+void Set( int index, UIWindow* wnd )
+void SetAbortScriptID( Goid goid, const gpstring& sEnchantmentName, SFxSID id )
+void SetActive( bool active )
+void SetActive( void )
+void SetActiveColor( DWORD dwColor )
+void SetActiveCursor( UICursor* pCursor )
+void SetActiveFogGo( Goid go, float transTime )
+void SetActiveMusicGo( Goid go, float transTime )
+void SetActiveRainGo( Goid go, float transTime )
+void SetActiveSnowGo( Goid go, float transTime )
+void SetActiveSunGo( Goid go, float transTime )
+void SetActiveWindGo( Goid go, float transTime )
+void SetActorAutoFidgets( bool flag )
+void SetActorWeaponPreference( eWeaponPreference value )
+void SetAICaching( bool value )
+void SetAllignedTeam( int team )
+void SetAllowInput( bool bInput )
+void SetAllowUserPress( bool bAllow )
+void SetAlpha( BYTE alpha )
+void SetAlpha( float alpha )
+void SetAutoPlaceNotify( bool bSet )
+void SetAutoSize( bool autosize )
+void SetAutoTransfer( bool bTransfer )
+float SetAvgMoveVelocity( float v )
+void SetBackgroundColor( unsigned int color )
+void SetBackgroundFill( bool fill )
+void SetBlendGroupAnimWeight( DWORD g, DWORD i, float relw )
+void SetBlendGroupWeight( DWORD g, float gw )
+void SetBlockMCP( bool Flag )
+DWORD SetBoneFrozenState( const char* bonename, eBoneFreeze f, bool recursive )
+void SetBool( const char* key, bool value )
+void SetBool( int tag, const char* key, bool value )
+void SetBorder( bool bBorder )
+void SetBorderColor( unsigned int color )
+void SetBorderPadding( int padding )
+void SetBoxHeight( int height )
+void SetBoxWidth( int width )
+void SetButtonDown( bool bButtonDown )
+void SetCameraMode( eCameraMode mode )
+void SetCameraMode( eCameraMode mode, bool bClearOldOrders )
+void SetCanBePickedUp( bool bSet )
+void SetCanSell( bool bCanSell )
+void SetCheck( bool bCheck )
+void SetCheckState( bool bChecked )
+void SetChildListbox( UIListbox* pListbox )
+void SetClickDelay( float delay )
+void SetCode( eUIMessage msg )
+void SetColor( DWORD color )
+void SetColor( unsigned int color )
+void SetColumns( int columns )
+void SetCommonTemplate( const gpstring& sTemplate )
+bool SetComponentBool( const char* componentName, const char* propertyName, bool valBool )
+bool SetComponentFloat( const char* componentName, const char* propertyName, float valFloat )
+bool SetComponentInt( const char* componentName, const char* propertyName, int valInt )
+bool SetComponentScid( const char* componentName, const char* propertyName, Scid valScid )
+bool SetComponentString( const char* componentName, const char* propertyName, const gpstring& valString )
+void SetConsumable( bool bConsumable )
+void SetConsumesItems( bool bSet )
+void SetContinuePickup( bool bPickup )
+void SetCrowdingMCP( bool Flag )
+bool SetDamageAll( SimID id, bool state )
+void SetDamageMaxNatural( float damage )
+void SetDamageMinNatural( float damage )
+void SetDeactivateOverlapped( bool bSet )
+void SetDebugHudOptions( eDebugHudOptions options, bool set )
+void SetDebugMCP( bool Flag )
+void SetDebugState( bool state )
+void SetDiffuseColor( DWORD c )
+void SetDirection( const vector_3& dir )
+void SetDisableUpdate( bool bSet )
+void SetDockGroup( const gpstring& group )
+void SetDoesBlockPath( bool set )
+void SetDouble( const char* key, float value )
+void SetDouble( int tag, const char* key, float value )
+void SetDragAllowed( bool bAllowed )
+void SetDraggable( bool bDraggable )
+void SetDragGridX( int x )
+void SetDragGridY( int y )
+void SetDragTime( float time )
+void SetDragTimeElapsed( float time )
+void SetDrawOrder( int order )
+void SetDrawSelectionIndicator( bool set )
+void SetDrawText( bool bDrawText )
+void SetElementHelpBox( const gpstring& helpBox )
+void SetElementIcon( const gpstring& text, int icon )
+void SetElementIcon( int tag, int icon )
+void SetElementSelectable( int tag, bool bSelectable )
+void SetElementTagToolTip( int tag, const gpwstring& tip )
+void SetElementText( int tag, int line, const gpstring& sText, DWORD dwColor )
+void SetElementTextToolTip( gpwstring textName, const gpwstring& tip )
+void SetEnabled( bool bEnabled )
+void SetEnchantmentDoneMessage( Goid goid, const gpstring& sEnchantmentName, Goid send_to, eWorldEvent event )
+void SetEquipRequirements( const gpstring& requirements )
+void SetEscNisToFrontEnd( bool bSet )
+void SetExpanded( bool bExpanded )
+void SetExperienceBenefactor( Goid go )
+void SetExperienceBenefactorSkill( const char* s )
+void SetFadeIn( bool set )
+void SetFixedLocation( bool bSet )
+void SetFloat( const char* key, float value )
+void SetFloat( int tag, const char* key, float value )
+void SetFont( const gpstring& sFont )
+void SetFontHeight( int height )
+void SetForceCheck( bool bCheck )
+void SetForceClientAllowed( bool set )
+void SetForcePosition( bool set )
+void SetForceServerOnly( bool set )
+void SetFreezeMeshFlag( bool flag )
+void SetGameSpeed( float x )
+void SetGameSpeed( float x, bool printToScreen )
+void SetGoalMCP( bool Flag )
+void SetGoldValue( int value )
+void SetGridbox( UIGridbox* box )
+void SetGridType( const gpstring& type )
+void SetGroup( const gpstring& group )
+void SetGuiDisabled( bool bDisable )
+void SetHasFocus( bool bSet )
+void SetHasTexture( bool bTexture )
+void SetHeight( int height )
+void SetHelpBoxName( const gpstring& helpTextBox )
+void SetHideMeshFlag( bool flag )
+void SetHitSelect( bool bSelect )
+void SetHudMCP( bool Flag )
+void SetIgnoreItem( bool bSet )
+bool SetIgnorePartyMembers( SimID id )
+void SetImeColor( DWORD dwColor )
+void SetIndex( int index )
+DWORD SetIndexedBoneFrozenState( DWORD bone_index, eBoneFreeze f, bool recursive )
+void SetInitialCommand( Scid command )
+void SetInputType( UI_INPUT_TYPE type )
+void SetInstanceAttrFlags( DWORD newval )
+void SetInt( const char* key, int value )
+void SetInt( int tag, const char* key, int value )
+void SetIntensity( float intensity )
+void SetInterfaceParent( const gpstring& parent_name )
+void SetInterpolationMode( eCameraInterpolate interpolate )
+void SetInvalid( bool bSet )
+void SetInvalidColor( DWORD dwColor )
+void SetInventoryHeight( int height )
+void SetInventoryIcon( const gpstring& icon )
+void SetInventoryWidth( int width )
+void SetIsCollidable( bool set )
+void SetIsCommonControl( bool bSet )
+void SetIsIdentified( bool bSet )
+void SetIsInvincible( bool set )
+void SetIsRepeater( bool repeater )
+void SetIsVisible( bool set )
+void SetItemDetect( bool bDetect )
+void SetItemMarkup( float markup )
+void SetItemPower( float power )
+void SetJustification( JUSTIFICATION justify )
+void SetKey( int key )
+void SetLabelMCP( bool Flag )
+void SetLagMCP( float val )
+void SetLatencyQueryFrequency( int f )
+void SetLButtonDown( bool lbutton )
+void SetLeadElement( int lead )
+void SetLifeState( eLifeState state )
+void SetLineSpacer( int set )
+int SetLineText( int lineNum, const gpstring& sText, DWORD dwColor )
+void SetLinkOffsetPosition( const vector_3& v )
+void SetLinkOffsetRotation( const Quat& q )
+void SetLocalPlace( bool bSet )
+void SetLocalRetryDuration( float duration )
+void SetLockMeshFlag( bool flag )
+void SetMarkForDeletion( bool bDelete )
+void SetMaxDistance( float max_dist )
+void SetMaxStringSize( int size )
+void SetMayAttack( bool flag )
+void SetMayBeAttacked( bool flag )
+void SetMemberDirection( const vector_3& dir )
+void SetMidState( bool bSet )
+void SetMinDistance( float min_dist )
+void SetMode( eDebugProbe mode )
+void SetMood( const gpstring& moodName, float transTime )
+void SetMouseX( int x )
+void SetMouseY( int y )
+void SetMPSendFrequency( int Hz )
+void SetMPSleep( int sleep )
+void SetMsgState( int state )
+void SetName( const gpstring& name )
+void SetNewTimerSeconds( int id, float timeFromNow )
+void SetNode( const SiegeGuid& g )
+void SetNormalizedRect( float left, float right, float top, float bottom )
+void SetNormalizeResize( bool bSet )
+void SetNoStartupFx( bool set )
+void SetOmni( bool omni )
+void SetOptimizeMCP( bool Flag )
+void SetPackMemberStats( Goid party_member )
+void SetParent( Go* parent )
+void SetParentWindow( UIWindow* parent )
+void SetPartyDirty( void )
+void SetPassThrough( bool bPass )
+void SetPermanentFocus( bool bFocus )
+void SetPollPeriod( float period )
+void SetPos( const vector_3& v )
+void SetPosition( const SiegePos& pos )
+void SetPosition( float x, float y )
+void SetPrepareToDrawNow( bool set )
+void SetPressedState( bool pressed )
+void SetProbeObject( Goid object )
+void SetProbeObject( Scid object )
+void SetProjectileLauncher( Goid id )
+void SetPromptIndex( int index )
+void SetPulloutOffset( int offset )
+void SetQuestBool( Goid goid, const char* mapName, const char* keyName, bool valBool )
+void SetQuestFloat( Goid goid, const char* mapName, const char* keyName, float valFloat )
+void SetQuestInt( Goid goid, const char* mapName, const char* keyName, int valInt )
+void SetQuestString( Goid goid, const char* mapName, const char* keyName, const gpstring& valString )
+void SetRadioGroup( const gpstring& sGroup )
+void SetRank( DWORD rank )
+void SetRButtonDown( bool rbutton )
+void SetRect( int left, int right, int top, int bottom, bool bAnimation )
+void SetReportFilters( const gpstring& filter )
+void SetRollover( bool bRollover )
+void SetRolloverKey( const gpstring& sKey )
+void SetRot( const Quat& q )
+void SetRows( int rows )
+void SetScale( float scale )
+bool SetScidBit( Scid scid, int index, bool value )
+DWORD SetScidBits( Scid scid, DWORD value )
+void SetScreenName( const gpstring& name )
+void SetScrolling( bool bScrolling )
+void SetScrollRate( float scrollRate )
+void SetScrollThrough( bool bSet )
+void SetSelectedTag( int tag )
+void SetSendDelay( float t )
+void SetShape( const gpstring& name )
+void SetShowMCP( bool Flag )
+void SetShowPathsMCP( bool Flag )
+void SetShowSpatialQueries( bool flag )
+void SetShowTriggerSys( bool Flag )
+void SetShowTriggerSysHits( bool Flag )
+void SetSize( float width, float height )
+void SetSnapToTerrain( bool snap )
+void SetStartedBySECommand( Scid scid )
+void SetStartingOrient( const Quat& quat )
+void SetStartingPos( const SiegePos& siegePos )
+void SetStore( bool bStore )
+void SetString( const char* key, const gpstring& value )
+void SetString( int tag, const char* key, const gpstring& value )
+void SetTag( long tag )
+void SetTargetTypeFlags( eTargetTypeFlags flags )
+void SetTestMCP( bool Flag )
+void SetText( const gpstring& sText )
+void SetText( const gpstring& text )
+void SetText( const gpstring& text, bool bReset )
+void SetTextColor( unsigned int color )
+void SetTextPosition( int x, int y )
+void SetTextureIndex( unsigned int id )
+void SetTiledTexture( bool bTiled )
+void SetTimer( float Delay )
+void SetTimerGlobal( int id, bool global )
+void SetTimerRepeatCount( int id, int count )
+void SetToolTip( const gpwstring& HelpText, const gpstring& HelpTextBox, bool bIsToolTip )
+void SetToolTipText( const gpstring& sText )
+void SetTopmost( bool bSet )
+void SetTraitInterruptable( bool flag )
+void SetTraitUseSpatialSensors( bool flag )
+void SetType( UI_CONTROL_TYPE type )
+void SetUncachingEnabled( bool flag )
+void SetUVRect( float left, float right, float top, float bottom )
+void SetValue( UINT32 guid )
+void SetVariable( UINT32 index, SiegePos& position, Goid owner )
+void SetVariation( const gpstring& name )
+void SetVerbose( bool verbose )
+bool SetVictoryConditionValue( const char* condition, int value )
+void SetVisible( bool bVisible )
+void SetW( float f )
+void SetWorldViewport( float width, float height, float fovDegrees, float duration )
+void SetX( float f )
+void SetY( float f )
+void SetZ( float f )
+bool SExplodeGo( Goid Object, float magnitude, const vector_3& initial_velocity )
+void SFadeInterface( const char* szInterface, float duration, Goid target )
+void ShiftGroup( const gpstring& sInterface, const gpstring& sGroup, int xShift, int yShift )
+void ShiftInterface( const gpstring& sInterface, int xShift, int yShift )
+void Show( const char* properties )
+void ShowGroup( const char* szGroup, bool bShow, bool bMessage, const char* szInterface )
+void ShowHiddenText( bool flag )
+void ShowInterface( const gpstring& interface_name )
+void ShowOnly( const char* properties )
+float Sin( float f )
+void SIncrementStat( const char* stat, Player* player, int value )
+float SinWave( float a, float b, float c, float d, float t, float frequency, float amplitude )
+int Size( void ) const
+void SKickPlayer( PlayerId playerId )
+void SLaunchAmmo( float velocity, const SiegePos& firingPos, const SiegePos& targetPos, float x_error, float y_error, Goid intended_target )
+void SLeaderMessage( eGameStat stat, const char* msgName )
+void SMarkForDeletion( Go* go )
+void SMarkForDeletion( Go* go, bool retire )
+void SMarkForDeletion( Go* go, bool retire, bool fadeOut )
+void SMarkForDeletion( Go* go, bool retire, bool fadeOut, bool mpdelayed )
+void SMarkForDeletion( Goid goid )
+void SMarkForDeletion( Goid goid, bool retire )
+void SMarkForDeletion( Goid goid, bool retire, bool fadeOut )
+void SMarkForDeletion( Goid goid, bool retire, bool fadeOut, bool mpdelayed )
+void SMarkForDeletion( Scid scid )
+void SMarkForDeletion( Scid scid, bool retire )
+void SMarkForDeletion( Scid scid, bool retire, bool fadeOut )
+void SMarkForDeletion( Scid scid, bool retire, bool fadeOut, bool mpdelayed )
+void SMarkGoAndChildrenForDeletion( Go* go )
+void SMarkGoAndChildrenForDeletion( Go* go, bool retire )
+void SMarkGoAndChildrenForDeletion( Go* go, bool retire, bool fadeOut )
+void SMarkGoAndChildrenForDeletion( Go* go, bool retire, bool fadeOut, bool mpdelayed )
+void SMarkGoAndChildrenForDeletion( Goid goid )
+void SMarkGoAndChildrenForDeletion( Goid goid, bool retire )
+void SMarkGoAndChildrenForDeletion( Goid goid, bool retire, bool fadeOut )
+void SMarkGoAndChildrenForDeletion( Goid goid, bool retire, bool fadeOut, bool mpdelayed )
+void SMarkGoAndChildrenForDeletion( Scid scid )
+void SMarkGoAndChildrenForDeletion( Scid scid, bool retire )
+void SMarkGoAndChildrenForDeletion( Scid scid, bool retire, bool fadeOut )
+void SMarkGoAndChildrenForDeletion( Scid scid, bool retire, bool fadeOut, bool mpdelayed )
+void SPlayChapterSound( const char* szSample, Goid target )
+void SPlayMaterialSound( const char* eventName, const char* dstMaterial, bool local3d )
+void SPlayMaterialSound( const char* eventName, Goid dstGoid, bool local3d )
+void SPlayVoiceSound( const char* eventName, bool local3d )
+void SPostWorldMessage( eWorldEvent event, Goid from, Scid to, DWORD data, float delay )
+void SPostWorldMessage( eWorldEvent event, Goid from, Scid to, float delay )
+Goid SPrepareAmmo( void )
+FuBiCookie SReleaseFrustumFromGo( Goid goid, bool eraseFrustum )
+void SRemoveGenericState( const char* sName )
+void SReplaceNodalTexture( SiegeId node, int tex_index, const gpstring& newTexName )
+void SRequestNodeConnection( SiegeId targetNode, DWORD targetDoor, SiegeId connectNode, DWORD connectDoor, bool bConnect, bool bForceComplete )
+void SRequestNodeTransition( SiegeId targetNode, DWORD targetDoor, SiegeId connectNode, DWORD connectDoor, float duration, eAxisHint ahint, Goid owner, bool bConnect, bool bForceComplete )
+void SRequestNodeTransition( SiegeId targetNode, DWORD targetDoor, SiegeId connectNode, DWORD connectDoor, float duration, eAxisHint ahint, Goid owner, bool bConnect, bool bForceComplete, TTMessages* msg )
+void SResetGhostTimeout( void )
+void SRestoreLastMembership( void )
+SFxSID SRunMpScript( const char* sName, Goid target, Goid source, const char* sParams, Goid Owner, eWorldEvent type )
+SFxSID SRunScript( const char* sName, Goid target, Goid source, const char* sParams, Goid Owner, eWorldEvent type )
+bool SRunScriptSpecial( const char* sName, const char* sParams, Goid Owner, eWorldEvent type, const SiegePos& target_pos, float radius, float x_offset, float y_offset, float z_offset )
+void SScreen( const char* msg )
+void SScreen( DWORD machineId, const char* msg )
+void SScreenF( const char* format, ... )
+void SScreenF( DWORD machineId, const char* format, ... )
+void SSend( WorldMessage& message, MESSAGE_DISPATCH_FLAG flags )
+bool SSendActionToPartyMembersRemainingInNode( SiegeId node, const gpstring& fadereq )
+void SSendDelayed( WorldMessage& message, MESSAGE_DISPATCH_FLAG flags )
+void SSendWorldMessage( eWorldEvent event, Goid from, Scid to )
+void SSendWorldMessage( eWorldEvent event, Goid from, Scid to, DWORD data )
+void SSetAlignment( eActorAlignment alignment )
+void SSetAllowRespawn( bool bSet )
+void SSetAspectTextureSpeed( int texIndex, float texSpeed )
+void SSetCanShowHealth( bool bSet )
+void SSetCanTalk( bool bCanTalk )
+void SSetCurrentAspectTexture( int texIndex, const char* textureName )
+void SSetCurrentLife( float life )
+void SSetCurrentMana( float mana )
+void SSetCustomHead( const gpstring& ch )
+void SSetDropInvOption( eDropInvOption option )
+void SSetDynamicTexture( ePlayerSkin skin, const char* name )
+void SSetFreezeMeshFlag( bool set )
+void SSetGhostTimeout( float timeout )
+void SSetGoldValue( int value, bool bForceRC )
+void SSetInventoryDirty( bool set )
+void SSetIsGhostUsable( bool set )
+void SSetIsSelectable( bool set )
+void SSetIsUsable( bool set )
+void SSetIsVisible( bool set )
+void SSetLifeState( eLifeState state )
+void SSetLifeState( eLifeState state, bool forceUpdate )
+void SSetLockMeshFlag( bool set )
+void SSetMaxLife( float life )
+void SSetMaxMana( float maxMana )
+void SSetNaturalMaxLife( float maxLife )
+void SSetNaturalMaxMana( float maxMana )
+void SSetNodalTextureAnimationSpeed( SiegeId node, int tex_index, float speed )
+void SSetNodalTextureAnimationState( SiegeId node, int tex_index, bool bState )
+void SSetOrientation( const Quat& quat )
+void SSetParent( Go* parent )
+void SSetPlacement( const SiegePos& pos, const Quat& quat, bool snapToTerrain )
+void SSetPlayer( PlayerId id )
+void SSetPosition( const SiegePos& pos, bool snapToTerrain )
+void SSetQuestBool( Goid goid, const char* mapName, const char* keyName, bool valBool )
+void SSetQuestFloat( Goid goid, const char* mapName, const char* keyName, float valFloat )
+void SSetQuestInt( Goid goid, const char* mapName, const char* keyName, int valInt )
+void SSetQuestString( Goid goid, const char* mapName, const char* keyName, const gpstring& valString )
+bool SSetScidBit( Scid scid, int index, bool value )
+DWORD SSetScidBits( Scid scid, DWORD value )
+void SSetScreenName( const gpstring& name )
+void SSetTeamVictoryConditionMet( const char* condition, bool met, int team )
+void SSetVictoryConditionMet( const char* condition, bool met )
+void SStopScript( Goid id, const char* sName )
+void SStopScript( SFxSID id )
+void SSyncRevivedPartyGold( void )
+bool StartCameraFx( const char* name )
+bool StartCameraFx( const char* name, const char* params )
+void StartCaptureMovie( const char* fileName, float fps, float secondsFromNow, float durationSeconds )
+bool StartDecalFx( DecalId siegeDecal, const char* name )
+bool StartDecalFx( DecalId siegeDecal, const char* name, const char* params )
+void StartDropAnimation( Goid item, const SiegePos& dropPos, const Quat& dropQuat )
+bool StartExpiration( Go* go, bool forced )
+bool StartLightFx( LightId siegeLight, const char* name )
+bool StartLightFx( LightId siegeLight, const char* name, const char* params )
+void StartWatching( Goid watcher, Goid watched )
+void StopAmbientTrack( float fadeTime )
+void StopBattleTrack( float fadeTime )
+void StopCaptureMovie( void )
+void StopScript( Goid id, const char* sName )
+void StopScript( SFxSID id )
+void StopSound( DWORD soundId )
+void StopStandardTrack( float fadeTime )
+void StopWatching( Goid watcher, Goid watched )
+float SubAnimDurationForStance( DWORD stance, DWORD index ) const
+void SubmitCameraOffset( const SiegePos& offset )
+void SubmitCameraOffset( const vector_3& offset )
+void SubmitCameraPosition( const gpstring& point_name, const CameraEulerPosition& point )
+void SubmitCameraPosition( const gpstring& point_name, const CameraMatrixPosition& point )
+void SubmitCameraPosition( const gpstring& point_name, const CameraPosition& point )
+void SubmitCameraPosition( const gpstring& point_name, const CameraQuatPosition& point )
+void SubmitCameraPosition( const gpstring& point_name, const CameraVectorToCameraPosition& point )
+void SubmitCameraPosition( const gpstring& point_name, const CameraVectorToTargetPosition& point )
+void SubmitOrder( const gpstring& point_name, eCameraOrder order, float time, bool bPersist, Scid scid )
+void SUnprepareAmmo( void )
+void TakesOver( Job* oldJob )
+void TestAssert2( void )
+bool TestBits( eLogicalNodeFlags l, eLogicalNodeFlags r )
+void TestCrash2( void )
+bool TestDebugHudOptions( eDebugHudOptions options ) const
+bool TestDebugHudOptionsEq( eDebugHudOptions options ) const
+bool TestEquip( Goid item, eEquipSlot slot ) const
+bool TestEquipPassive( Goid item ) const
+void TestExit2( void )
+void TestFatal2( void )
+bool TestGet( Goid item ) const
+bool TestGet( Goid item, bool silent ) const
+void TestLog( const char* msg )
+void TestLogF( const char* format, ... )
+float TimeOfCurrentTimeWarp( void )
+float ToFloat( int i )
+void Toggle( const char* context )
+void Toggle( void )
+void ToggleDebugHudOptions( eDebugHudOptions options )
+void ToggleMode( eDebugProbe mode )
+bool ToggleSelected( void )
+int ToInt( float f )
+SiegePos& ToSiegePosRef( int siegePosRef )
+const char* ToString( eAlteration e )
+const char* ToString( eAxisHint val )
+const char* ToString( eCameraInterpolate val )
+const char* ToString( eCameraOrder val )
+const char* ToString( eJobAbstractType Type )
+const char* ToString( eMoodRoomType val )
+const char* ToString( eUIMessage e )
+const char* ToString( eWorldEvent val )
+const char* ToString( eWorldState e )
+const char* ToString( FADETYPE val )
+const char* ToString( JUSTIFICATION e )
+const char* ToString( MCP::eOrientMode x )
+const char* ToString( MCP::eReqRetCode x )
+const char* ToString( MCP::eRequest x )
+const char* ToString( MCP::eRID x )
+const char* ToString( UI_ACTION e )
+const char* ToString( UI_CONTROL_TYPE e )
+const char* ToString( UI_INPUT_TYPE e )
+static void ToString( gpstring& out, const Type& obj, FuBi::eXfer )
+static void ToString( gpstring& out, const Type& obj, FuBi::eXfer xfer )
+const char* Translate( const char* message )
+void TranslateBoneX( const char* b, float o )
+void TranslateBoneX( const char* bonename, float offset, bool relative )
+void TranslateBoneY( const char* b, float o )
+void TranslateBoneY( const char* bonename, float offset, bool relative )
+void TranslateBoneZ( const char* b, float o )
+void TranslateBoneZ( const char* bonename, float offset, bool relative )
+void TranslateIndexedBoneX( int b, float o )
+void TranslateIndexedBoneX( int bonenum, float offset, bool relative )
+void TranslateIndexedBoneY( int b, float o )
+void TranslateIndexedBoneY( int bonenum, float offset, bool relative )
+void TranslateIndexedBoneZ( int b, float o )
+void TranslateIndexedBoneZ( int bonenum, float offset, bool relative )
+const char* TranslateMsg( const char* message )
+bool UnderstandsJob( eJobAbstractType eType ) const
+void Unload( void )
+void UnMarkInterfaceForDeactivation( const gpstring& sInterface )
+bool UpdateAbsolute( float t, float min_t )
+DWORD UpdateBlender( float deltat )
+void UpdateClassDesignation( Goid Client )
+bool UpdateTimeWarp( void )
+void UserPause( bool pause )
+void Warning( const char* msg )
+void WarningF( const char* format, ... )
+bool WasInViewFrustumRecently( void ) const
+float XPToLevel( float xp ) const

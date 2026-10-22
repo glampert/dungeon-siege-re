@@ -1,0 +1,37 @@
+
+-==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-
+-== App          : Dungeon Siege II (D:\Apps\Dungeon Siege II Tool Kit\DungeonSiege2Mod.exe - Retail Mod)
+-== Log category : Generic
+-== Session      : 6/17/2016 06:34:03 PM
+-== Build        : Win2k (2.30.0.3926)
+-==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-
+
++00:00:00.001 - report filelog generic
++00:00:01.987 - 
++00:00:01.987 - -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -
++00:00:01.989 - 
++00:00:01.989 - Path variables:
++00:00:01.989 - 
++00:00:01.989 -  Key             | Value                                                 | Expanded                                                         
++00:00:01.989 - ---------------------------------------------------------------------------------------------------------------------------------------------
++00:00:01.990 -  bits            | %user_path%\Bits                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Bits       
++00:00:01.990 -  dll_paths       | %user_path%\Mods                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Mods       
++00:00:01.990 -                  | %home%\dev                                            | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2\dev               
++00:00:01.990 -  ds2dll_path     | [D:\Programming\Projects\dsmmorpg\deploy]             | D:\Programming\Projects\dsmmorpg\deploy                          
++00:00:01.991 -  ds_exe_path     | %exe_path%                                            | D:\Apps\Dungeon Siege II Tool Kit\                               
++00:00:01.991 -  ds_install_path | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2        | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2                   
++00:00:01.991 -  dstk_path       | D:\Apps\Dungeon Siege II Tool Kit                     | D:\Apps\Dungeon Siege II Tool Kit                                
++00:00:01.991 -  exe_path        | D:\Apps\Dungeon Siege II Tool Kit\                    | D:\Apps\Dungeon Siege II Tool Kit\                               
++00:00:01.991 -  home            | %ds_install_path%                                     | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2                   
++00:00:01.992 -  keys_path       | %user_path%\Keys                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Keys       
++00:00:01.992 -  log_path        | %user_path%\Logs                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Logs       
++00:00:01.992 -  map_paths       | %user_path%\Maps                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Maps       
++00:00:01.992 -                  | %home%\Maps                                           | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2\Maps              
++00:00:01.993 -  mod_paths       | %user_path%\Mods                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Mods       
++00:00:01.993 -                  | %home%                                                | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2                   
++00:00:01.993 -  res_paths       | %home%\Resources                                      | D:\Apps\Steam\SteamApps\common\Dungeon Siege 2\Resources         
++00:00:01.993 -  save_path       | %user_path%\Save                                      | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Save       
++00:00:01.993 -  shots_path      | %user_path%\Screenshots                               | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod\Screenshots
++00:00:01.994 -  temp_path       | C:\Users\UserName\AppData\Local\Temp\                    | C:\Users\UserName\AppData\Local\Temp\                               
++00:00:01.994 -  user_path       | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod | C:\Users\UserName\Documents\My Games\Dungeon Siege 2 Mod            
++00:00:01.994 - /config.dumppathvars

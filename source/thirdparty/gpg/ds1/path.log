@@ -1,0 +1,51 @@
+
+-==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-
+-== App          : Dungeon Siege (C:\Program Files (x86)\Dungeon Siege Tool Kit\DSMod.exe - Development-Release)
+-== Log category : Generic
+-== Session      : 6/8/2019 03:49:36 PM
+-== User/Machine : 
+-== Build        : 1.11.1.1486 (msqa:2003.07.0202) (Dec 17 2003 16:57:55)
+-==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==-
+
++00:00:00.001 - report filelog generic
++00:00:04.453 - 
++00:00:04.453 - -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==- -==
++00:00:04.454 - 
++00:00:04.454 - Path variables:
++00:00:04.454 - 
++00:00:04.454 -  Key             | Value                                          | Expanded                                         
++00:00:04.454 - ----------------------------------------------------------------------------------------------------------------------
++00:00:04.454 -  bits            | %out%                                          | C:\Users\UserName\Documents\Dungeon Siege\Bits        
++00:00:04.454 -                  | %home%                                         | D:\Games\Dungeon Siege                           
++00:00:04.454 -  ds_exe_path     | %ds_install_path%                              | D:\Games\Dungeon Siege                           
++00:00:04.455 -  ds_install_path | D:\Games\Dungeon Siege                         | D:\Games\Dungeon Siege                           
++00:00:04.455 -  dsdll_path      | %exe_path%                                     | C:\Program Files (x86)\Dungeon Siege Tool Kit\   
++00:00:04.455 -  exe_path        | C:\Program Files (x86)\Dungeon Siege Tool Kit\ | C:\Program Files (x86)\Dungeon Siege Tool Kit\   
++00:00:04.455 -  home            | [D:\Games\Dungeon Siege]                       | D:\Games\Dungeon Siege                           
++00:00:04.456 -  keys_path       | %user_path%\Keys                               | C:\Users\UserName\Documents\Dungeon Siege\Keys        
++00:00:04.456 -  log_path        | %user_path%\Logs                               | C:\Users\UserName\Documents\Dungeon Siege\Logs        
++00:00:04.456 -  map_paths       | %user_path%\Maps                               | C:\Users\UserName\Documents\Dungeon Siege\Maps        
++00:00:04.457 -                  | %home%\Maps                                    | D:\Games\Dungeon Siege\Maps                      
++00:00:04.457 -  mod_paths       | %user_path%\Mods                               | C:\Users\UserName\Documents\Dungeon Siege\Mods        
++00:00:04.457 -                  | %home%                                         | D:\Games\Dungeon Siege                           
++00:00:04.458 -  out             | %user_path%\Bits                               | C:\Users\UserName\Documents\Dungeon Siege\Bits        
++00:00:04.458 -  res_paths       | %home%\Resources                               | D:\Games\Dungeon Siege\Resources                 
++00:00:04.458 -  save_path       | %user_path%\Save                               | C:\Users\UserName\Documents\Dungeon Siege\Save        
++00:00:04.458 -  shots_path      | %user_path%\Screen Shots                       | C:\Users\UserName\Documents\Dungeon Siege\Screen Shots
++00:00:04.459 -  temp_path       | C:\Users\UserName\AppData\Local\Temp\               | C:\Users\UserName\AppData\Local\Temp\                 
++00:00:04.459 -  user_path       | C:\Users\UserName\Documents\Dungeon Siege           | C:\Users\UserName\Documents\Dungeon Siege             
++00:00:04.459 - /config.dumppathvars
++00:00:05.994 - exit
++00:00:06.027 - GoDb :: Shutdown
++00:00:06.605 - TriggerSys :: Shutdown
++00:00:06.605 - GoDb :: Shutdown
++00:00:06.606 - TriggerSys :: Shutdown
++00:00:06.606 - Server :: Shutdown
++00:00:06.606 - 
++00:00:06.606 - Server :: MarkPlayerForDeletion - playerId = 0x00000001
++00:00:06.607 - 
++00:00:06.607 - Server :: MarkPlayerForDeletion - playerId = 0x00000002
++00:00:06.629 - Server :: ~Server
++00:00:06.629 - Server :: Shutdown
++00:00:06.629 - GoDb :: Shutdown
++00:00:06.630 - GoDb :: Shutdown
